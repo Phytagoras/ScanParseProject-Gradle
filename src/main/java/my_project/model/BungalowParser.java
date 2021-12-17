@@ -1,10 +1,10 @@
 package my_project.model;
 
-public class KnebiParser implements Parser {
+public class BungalowParser implements Parser {
 
     private KnebiScanner scanner;
 
-    public KnebiParser(){
+    public BungalowParser(){
         scanner = new KnebiScanner();
     }
 

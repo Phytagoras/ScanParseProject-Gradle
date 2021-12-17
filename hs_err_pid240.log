@@ -1,0 +1,130 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff975c63889, pid=240, tid=6208
+#
+# JRE version: OpenJDK Runtime Environment Corretto-16.0.2.7.1 (16.0.2+7) (build 16.0.2+7)
+# Java VM: OpenJDK 64-Bit Server VM Corretto-16.0.2.7.1 (16.0.2+7, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# Problematic frame:
+# C  [native-platform-file-events.dll+0x23889]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://github.com/corretto/corretto-jdk/issues/
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -XX:MaxMetaspaceSize=256m -XX:+HeapDumpOnOutOfMemoryError -agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=127.0.0.1:59788 --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED -Xms256m -Xmx512m -Dfile.encoding=windows-1252 -Duser.country=DE -Duser.language=de -Duser.variant org.gradle.launcher.daemon.bootstrap.GradleDaemon 7.0
+
+Host: Intel(R) Celeron(R) CPU G3900 @ 2.80GHz, 2 cores, 3G,  Windows 10 , 64 bit Build 19041 (10.0.19041.292)
+Time: Fri Dec 17 09:19:25 2021 Mitteleuropäische Zeit elapsed time: 46.955411 seconds (0d 0h 0m 46s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001e3679325b0):  JavaThread "File watcher server" daemon [_thread_in_native, id=6208, stack(0x000000c20c900000,0x000000c20ca00000)]
+
+Stack: [0x000000c20c900000,0x000000c20ca00000],  sp=0x000000c20c9fe7e0,  free space=1017k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [native-platform-file-events.dll+0x23889]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  net.rubygrapefruit.platform.internal.jni.AbstractFileEventFunctions$NativeFileWatcher.executeRunLoop0(Ljava/lang/Object;)V+0
+j  net.rubygrapefruit.platform.internal.jni.AbstractFileEventFunctions$NativeFileWatcher.access$100(Lnet/rubygrapefruit/platform/internal/jni/AbstractFileEventFunctions$NativeFileWatcher;Ljava/lang/Object;)V+2
+j  net.rubygrapefruit.platform.internal.jni.AbstractFileEventFunctions$NativeFileWatcher$1.run()V+26
+v  ~StubRoutines::call_stub
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0xffffffffffffffff
+
+
+Register to memory mapping:
+
+RIP=0x00007ff975c63889 native-platform-file-events.dll
+RAX=0x2473636974736974 is an unknown value
+RBX=0x0000000000000001 is an unknown value
+RCX=0x2473636974736974 is an unknown value
+RDX=0x0 is NULL
+RSP=0x000000c20c9fe7e0 is pointing into the stack for thread: 0x000001e3679325b0
+RBP=0x000000c20c9ff0e8 is pointing into the stack for thread: 0x000001e3679325b0
+RSI=0x0 is NULL
+RDI=0x00000000ffffffff is an unallocated location in the heap
+R8 =0x0000000065747379 is an unknown value
+R9 =0x000000c20c9fe900 is pointing into the stack for thread: 0x000001e3679325b0
+R10=0x0 is NULL
+R11=0x0000000000000246 is an unknown value
+R12=0x0 is NULL
+R13={method} {0x000001e36a773018} 'executeRunLoop0' '(Ljava/lang/Object;)V' in 'net/rubygrapefruit/platform/internal/jni/AbstractFileEventFunctions$NativeFileWatcher'
+R14=0x000000c20c9ff110 is pointing into the stack for thread: 0x000001e3679325b0
+R15=0x000001e3679325b0 is a thread
+
+
+Registers:
+RAX=0x2473636974736974, RBX=0x0000000000000001, RCX=0x2473636974736974, RDX=0x0000000000000000
+RSP=0x000000c20c9fe7e0, RBP=0x000000c20c9ff0e8, RSI=0x0000000000000000, RDI=0x00000000ffffffff
+R8 =0x0000000065747379, R9 =0x000000c20c9fe900, R10=0x0000000000000000, R11=0x0000000000000246
+R12=0x0000000000000000, R13=0x000001e36a773010, R14=0x000000c20c9ff110, R15=0x000001e3679325b0
+RIP=0x00007ff975c63889, EFLAGS=0x0000000000010297
+
+Top of Stack: (sp=0x000000c20c9fe7e0)
+0x000000c20c9fe7e0:   000000c20c1fc1b0 000001e36ae20180
+0x000000c20c9fe7f0:   000001e36b26e730 000001e36ae201d0
+0x000000c20c9fe800:   0000000000000034 00007ff975c64db9
+0x000000c20c9fe810:   000000c20c9fe858 000000c20c1fc1b0
+0x000000c20c9fe820:   0000000800000000 0000000000000000
+0x000000c20c9fe830:   00000000e03f6c01 000000c20c1fc170
+0x000000c20c9fe840:   0000609edc4093c6 000000c20c9fe880
+0x000000c20c9fe850:   000001e3679325b0 000000c20c9ff110
+0x000000c20c9fe860:   000001e36a773010 0000000000000000
+0x000000c20c9fe870:   000000c20c9ff0e8 00007ff9926ede5b
+0x000000c20c9fe880:   000000c20c1fc170 0000000000000000
+0x000000c20c9fe890:   00007ff975c64d50 000000c20c1fc170
+0x000000c20c9fe8a0:   0000000000000048 000009bd7026d803
+0x000000c20c9fe8b0:   0000000000000000 00007ff975c63a12
+0x000000c20c9fe8c0:   2473636974736974 ffffffff00000000
+0x000000c20c9fe8d0:   00007ff965747379 000001e36ae201b0 
+
+Instructions: (pc=0x00007ff975c63889)
+0x00007ff975c63789:   48 89 4c 24 08 48 81 ec d8 00 00 00 48 8b 05 1c
+0x00007ff975c63799:   1b 15 00 48 33 c4 48 89 84 24 c8 00 00 00 c7 44
+0x00007ff975c637a9:   24 40 00 00 00 00 81 bc 24 e8 00 00 00 e3 03 00
+0x00007ff975c637b9:   00 0f 85 c1 00 00 00 ba 03 00 00 00 48 8b 0d 2c
+0x00007ff975c637c9:   6b 15 00 e8 de 5a fe ff 0f b6 c0 85 c0 74 7a 48
+0x00007ff975c637d9:   8b 84 24 e0 00 00 00 8b 40 68 89 44 24 44 48 8b
+0x00007ff975c637e9:   84 24 e0 00 00 00 48 83 c0 08 48 8b d0 48 8d 8c
+0x00007ff975c637f9:   24 88 00 00 00 e8 30 e1 fd ff 48 89 44 24 50 48
+0x00007ff975c63809:   8b 44 24 50 48 89 44 24 58 8b 44 24 40 83 c8 01
+0x00007ff975c63819:   89 44 24 40 48 8b 4c 24 58 e8 aa e3 fd ff 48 89
+0x00007ff975c63829:   44 24 60 8b 44 24 44 89 44 24 20 4c 8b 4c 24 60
+0x00007ff975c63839:   4c 8d 05 90 4e 11 00 ba 03 00 00 00 48 8b 0d ac
+0x00007ff975c63849:   6a 15 00 e8 9d 11 fe ff 90 8b 44 24 40 83 e0 01
+0x00007ff975c63859:   85 c0 74 12 83 64 24 40 fe 48 8d 8c 24 88 00 00
+0x00007ff975c63869:   00 e8 ba ef fd ff 48 8b 8c 24 e0 00 00 00 e8 f2
+0x00007ff975c63879:   4f fe ff e9 36 01 00 00 48 8b 84 24 e0 00 00 00
+0x00007ff975c63889:   83 78 68 01 0f 84 cb 00 00 00 ba 03 00 00 00 48
+0x00007ff975c63899:   8b 0d 59 6a 15 00 e8 0b 5a fe ff 0f b6 c0 85 c0
+0x00007ff975c638a9:   0f 84 90 00 00 00 48 8b 84 24 e0 00 00 00 8b 40
+0x00007ff975c638b9:   68 89 44 24 48 48 8b 84 24 e0 00 00 00 48 83 c0
+0x00007ff975c638c9:   08 48 8b d0 48 8d 8c 24 a8 00 00 00 e8 59 e0 fd
+0x00007ff975c638d9:   ff 48 89 44 24 68 48 8b 44 24 68 48 89 44 24 70
+0x00007ff975c638e9:   8b 44 24 40 83 c8 02 89 44 24 40 48 8b 4c 24 70
+0x00007ff975c638f9:   e8 d3 e2 fd ff 48 89 44 24 78 8b 44 24 48 89 44
+0x00007ff975c63909:   24 30 8b 84 24 e8 00 00 00 89 44 24 28 8b 84 24
+0x00007ff975c63919:   f0 00 00 00 89 44 24 20 4c 8b 4c 24 78 4c 8d 05
+0x00007ff975c63929:   d3 4d 11 00 ba 03 00 00 00 48 8b 0d bf 69 15 00
+0x00007ff975c63939:   e8 b0 10 fe ff 90 8b 44 24 40 83 e0 02 85 c0 74
+0x00007ff975c63949:   12 83 64 24 40 fd 48 8d 8c 24 a8 00 00 00 e8 cd
+0x00007ff975c63959:   ee fd ff eb 59 48 8b 84 24 e0 00 00 00 c7 40 68
+0x00007ff975c63969:   00 00 00 00 48 8b 84 24 e0 00 00 00 48 8b 00 48
+0x00007ff975c63979:   89 84 24 80 00 00 00 48 8b 84 24 e0 00 00 00 48 
+
+
+Stack slot to memory mapping:
+stack at sp + 0 slots: 0x000000c20c1fc1b0 is pointing into the stack for thread: 0x000001e367cdf270
+stack at sp + 1 slots: 0x000001e36ae20180 points into unknown readable memory: 0x293b796863726172 | 72 61 72 63 68 79 3b 29
+stack at sp + 2 slots: 0x000001e36b26e730 points into unknown readable memory: 0x4c2800141eed0001 | 01 00 ed 1e 14 00 28 4c
+stack at sp + 3 slots: 0x000001e36ae201d0 points into unknown readable memory: 0x466c617574726956 | 56 69 72 74 75 61 6c 46
+stack at sp + 4 slots: 0x0000000000000034 is an unknown value
+stack at sp + 5 slots: 

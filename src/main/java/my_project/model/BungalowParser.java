@@ -2,10 +2,10 @@ package my_project.model;
 
 public class BungalowParser implements Parser {
 
-    private KnebiScanner scanner;
+    private BungalowScanner scanner;
 
     public BungalowParser(){
-        scanner = new KnebiScanner();
+        scanner = new BungalowScanner();
     }
 
     @Override
@@ -13,15 +13,29 @@ public class BungalowParser implements Parser {
      * Diese Methode parst eine Eingabe und stellt fest, ob sie zur Sprache L_Knebi = k(ne)*bi gehört
      */
     public boolean parse(String input) {
-        if(scanner.scan(input)) {                                                       //meckert der Scanner?
-            if (scanner.getType().equals("START")) {                                    //wenn das erste Token 'start' ist
-                scanner.nextToken();                                                    //gehe zum naechsten Token
-                if (scanner.getType().equals("MIDDLE")) {                               //wenn das  Token 'middle' ist
-                    scanner.nextToken();                                                //gehe zum naechsten Token
-                    while (scanner.getType().equals("MIDDLE")) scanner.nextToken();     //gehe so lange zum naechsten Token, bis das Token nicht mehr 'middle' ist
-                    if (scanner.getType().equals("END")) {                              //ist das Token 'end'?
-                        scanner.nextToken();                                            //gehe zum naechsten Token
-                        if (scanner.getType().equals("NODATA")) return true;            //ist das naechste Token jenes, welches das Ende markiert?
+        if(scanner.scan(input)) {
+            boolean door = false;
+            if (scanner.getType().equals("AUSSENWAND")) {
+                scanner.nextToken();
+                if (scanner.getType().equals("WAND") ||scanner.getType().equals("WANDMITFENSTER") ) {
+                    scanner.nextToken();
+                    while (!scanner.getType().equals("AUSSENWAND") && !door){
+                        if (scanner.getType().equals("TUER") && !door) {
+                            door = true;
+                            scanner.nextToken();
+                            if(scanner.getType().equals("WAND")||scanner.getType().equals("WANDMITFENSTER")){
+                                scanner.nextToken();
+                                while(scanner.getType().equals("WAND")||scanner.getType().equals("WANDMITFENSTER")){
+                                    scanner.nextToken();
+                                }
+                                if (scanner.getType().equals("AUSSENWAND")) {
+                                    scanner.nextToken();
+                                    if (scanner.getType().equals("NODATA")) return true;
+                                }
+                            }
+                        }else if(scanner.getType().equals("WAND")||scanner.getType().equals("WANDMITFENSTER")){
+                            scanner.nextToken();
+                        }else return false;
                     }
                 }
             }

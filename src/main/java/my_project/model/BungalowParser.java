@@ -2,9 +2,9 @@ package my_project.model;
 
 public class BungalowParser implements Parser {
 
-    private BungalowScanner scanner;
+    private final BungalowScanner scanner;
 
-    public BungalowParser(){
+    public BungalowParser() {
         scanner = new BungalowScanner();
     }
 
@@ -13,29 +13,27 @@ public class BungalowParser implements Parser {
      * Diese Methode parst eine Eingabe und stellt fest, ob sie zur Sprache L_Knebi = k(ne)*bi gehört
      */
     public boolean parse(String input) {
-        if(scanner.scan(input)) {
-            boolean door = false;
+        if (scanner.scan(input)) {
             if (scanner.getType().equals("AUSSENWAND")) {
                 scanner.nextToken();
-                if (scanner.getType().equals("WAND") ||scanner.getType().equals("WANDMITFENSTER") ) {
+                if (scanner.getType().equals("WAND") || scanner.getType().equals("WANDMITFENSTER")) {
                     scanner.nextToken();
-                    while (!scanner.getType().equals("AUSSENWAND") && !door){
-                        if (scanner.getType().equals("TUER") && !door) {
-                            door = true;
+                    while (!scanner.getType().equals("AUSSENWAND")) {
+                        if (scanner.getType().equals("TUER")) {
                             scanner.nextToken();
-                            if(scanner.getType().equals("WAND")||scanner.getType().equals("WANDMITFENSTER")){
+                            if (scanner.getType().equals("WAND") || scanner.getType().equals("WANDMITFENSTER")) {
                                 scanner.nextToken();
-                                while(scanner.getType().equals("WAND")||scanner.getType().equals("WANDMITFENSTER")){
+                                while (scanner.getType().equals("WAND") || scanner.getType().equals("WANDMITFENSTER")) {
                                     scanner.nextToken();
                                 }
                                 if (scanner.getType().equals("AUSSENWAND")) {
                                     scanner.nextToken();
-                                    if (scanner.getType().equals("NODATA")) return true;
-                                }
-                            }
-                        }else if(scanner.getType().equals("WAND")||scanner.getType().equals("WANDMITFENSTER")){
+                                    return scanner.getType().equals("NODATA");
+                                } else return false;
+                            } else return false;
+                        } else if (scanner.getType().equals("WAND") || scanner.getType().equals("WANDMITFENSTER")) {
                             scanner.nextToken();
-                        }else return false;
+                        } else return false;
                     }
                 }
             }
@@ -56,25 +54,26 @@ public class BungalowParser implements Parser {
 
     /**
      * Diese ist eine alternative Methode für das Parsen von L_Knebi = k(ne)*bi
+     *
      * @param input der zu parsenden String
      * @return true, falls die Eingabe ein Wort der Sprache ist, anderfalls false
      */
-    public boolean alternativeParse(String input){
-        if(scanner.scan(input)) {
+    public boolean alternativeParse(String input) {
+        if (scanner.scan(input)) {
             return checkS();
         }
         return false;
     }
 
-    private boolean checkS(){
-        if(scanner.getType().equals("START")) {
+    private boolean checkS() {
+        if (scanner.getType().equals("START")) {
             scanner.nextToken();
             return checkA();
         }
         return false;
     }
 
-    private boolean checkA(){
+    private boolean checkA() {
         if (scanner.getType().equals("MIDDLE")) {
             scanner.nextToken();
             while (scanner.getType().equals("MIDDLE")) scanner.nextToken();
@@ -83,17 +82,17 @@ public class BungalowParser implements Parser {
         return false;
     }
 
-    private boolean checkB(){
+    private boolean checkB() {
         if (scanner.getType().equals("END")) {
             scanner.nextToken();
-            if (scanner.getType().equals("NODATA")) return true;
+            return scanner.getType().equals("NODATA");
         }
         return false;
     }
 
     //************** Ausgabe der Scanner-Analyse zur Nachvollziehbarkeit *********
 
-    public String getScannerOutput(){
+    public String getScannerOutput() {
         return scanner.getDebugOutput();
     }
 

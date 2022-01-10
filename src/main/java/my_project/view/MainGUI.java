@@ -40,6 +40,9 @@ public class MainGUI {
                     case 1:
                         languageLabel.setText("Momentan ist die Sprache LeBungalow gewählt!");
                         break;
+                    case 2:
+                        languageLabel.setText("Momentan ist die Sprache LeBungalow Kontext gewählt!");
+                        break;
                     default:
                         languageLabel.setText("Es ist die Sprache mit dem Index " + languageIndex.getValue() + " gewählt.");
                         break;

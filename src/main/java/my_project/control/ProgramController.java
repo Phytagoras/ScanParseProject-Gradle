@@ -1,6 +1,7 @@
 package my_project.control;
 
 import KAGO_framework.control.ViewController;
+import my_project.model.BungalowKontextfreiParser;
 import my_project.model.BungalowParser;
 import my_project.model.KnebiParser;
 import my_project.view.MainGUI;
@@ -20,6 +21,7 @@ public class ProgramController {
     private ViewController viewController;  // diese Referenz soll auf ein Objekt der Klasse viewController zeigen. Über dieses Objekt wird das Fenster gesteuert.
     private KnebiParser knebiParser;
     private BungalowParser bungalowParser;
+    private BungalowKontextfreiParser bungalowKontextfreiParser;
 
     /**
      * Konstruktor
@@ -42,6 +44,7 @@ public class ProgramController {
         viewController.getSoundController().loadSound("src/main/resources/sound/nonono.mp3","no",false);
         knebiParser = new KnebiParser();
         bungalowParser = new BungalowParser();
+        bungalowKontextfreiParser = new BungalowKontextfreiParser();
         // todo Eigener Code
 
     }
@@ -59,6 +62,9 @@ public class ProgramController {
             // todo Hier können weitere Parser aufgeführt werden
             case 1:
                 return bungalowParser.parse(input);
+
+            case 2:
+                return bungalowKontextfreiParser.parse(input);
 
             default: System.out.println("\nDebug-Info: Für diesen Index ist kein Parser definiert!");
         }
@@ -82,6 +88,10 @@ public class ProgramController {
                 boolean bresult = bungalowParser.getScannerResult(input);
                 System.out.println("\n- KnebiScanner-DEBUG - "+bungalowParser.getScannerOutput());
                 return bresult;
+            case 2:
+                boolean bbresult = bungalowKontextfreiParser.getScannerResult(input);
+                System.out.println("\n- KnebiScanner-DEBUG - "+bungalowKontextfreiParser.getScannerOutput());
+                return bbresult;
 
             default: System.out.println("\nDebug-Info: Für diesen Index ist kein Scanner definiert!");
         }

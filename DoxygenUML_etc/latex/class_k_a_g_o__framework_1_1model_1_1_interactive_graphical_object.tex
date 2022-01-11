@@ -1,0 +1,181 @@
+\hypertarget{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object}{}\doxysection{K\+A\+G\+O\+\_\+framework.\+model.\+Interactive\+Graphical\+Object Class Reference}
+\label{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object}\index{KAGO\_framework.model.InteractiveGraphicalObject@{KAGO\_framework.model.InteractiveGraphicalObject}}
+
+
+Inheritance diagram for K\+A\+G\+O\+\_\+framework.\+model.\+Interactive\+Graphical\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for K\+A\+G\+O\+\_\+framework.\+model.\+Interactive\+Graphical\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_aa62937a6cea8c204f86899656876ce3f}{key\+Pressed}} (int key)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_aaf0a87fd0e103d439c1225c25b97e386}{key\+Released}} (int key)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_ad6522a3f6a39cc3d00e48f2af6cb098b}{mouse\+Released}} (Mouse\+Event e)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_ab5adfb2c5be6e76ce7f56176b25771a6}{mouse\+Clicked}} (Mouse\+Event e)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_aebb9ff2e9a4dc4af25f00eea14b1de10}{mouse\+Dragged}} (Mouse\+Event e)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_aaafb1d90c42a66e66aeb3eb570ad6d18}{mouse\+Moved}} (Mouse\+Event e)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_a916868fd6d778cdc209fe2ce89734253}{mouse\+Pressed}} (Mouse\+Event e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_aa62937a6cea8c204f86899656876ce3f}\label{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_aa62937a6cea8c204f86899656876ce3f}} 
+\index{KAGO\_framework.model.InteractiveGraphicalObject@{KAGO\_framework.model.InteractiveGraphicalObject}!keyPressed@{keyPressed}}
+\index{keyPressed@{keyPressed}!KAGO\_framework.model.InteractiveGraphicalObject@{KAGO\_framework.model.InteractiveGraphicalObject}}
+\doxysubsubsection{\texorpdfstring{keyPressed()}{keyPressed()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+Interactive\+Graphical\+Object.\+key\+Pressed (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})}
+
+Wird einmalig aufgerufen, wenn eine Taste heruntergedrückt wird. Nach der Anschlagverzögerung löst Windows den Tastendruck dann in schneller Folge erneut aus. Eignet sich N\+I\+C\+HT, um Bewegungen zu realisieren. 
+\begin{DoxyParams}{Parameters}
+{\em key} & Enthält den Zahlencode für die Taste. Kann direkt aus der Klasse Key\+Event geladen werden, z.\+B. Key\+Event\+\_\+\+V\+K\+\_\+3 \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_k_a_g_o__framework_1_1control_1_1_interactable_af03e0073850005d87913d818dea372e2}{K\+A\+G\+O\+\_\+framework.\+control.\+Interactable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1_program_view_a76f458cad03fd1a9178683a38ee95900}{K\+A\+G\+O\+\_\+framework.\+view.\+Program\+View}}.
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_aaf0a87fd0e103d439c1225c25b97e386}\label{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_aaf0a87fd0e103d439c1225c25b97e386}} 
+\index{KAGO\_framework.model.InteractiveGraphicalObject@{KAGO\_framework.model.InteractiveGraphicalObject}!keyReleased@{keyReleased}}
+\index{keyReleased@{keyReleased}!KAGO\_framework.model.InteractiveGraphicalObject@{KAGO\_framework.model.InteractiveGraphicalObject}}
+\doxysubsubsection{\texorpdfstring{keyReleased()}{keyReleased()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+Interactive\+Graphical\+Object.\+key\+Released (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})}
+
+Wird einmalig aufgerufen, wenn eine Taste losgelassen wird. 
+\begin{DoxyParams}{Parameters}
+{\em key} & Enthält den Zahlencode für die Taste. Kann direkt aus der Klasse Key\+Event geladen werden, z.\+B. Key\+Event\+\_\+\+V\+K\+\_\+3 \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_k_a_g_o__framework_1_1control_1_1_interactable_af0dc5a487f3fd96ba2c7da6cf77f88d5}{K\+A\+G\+O\+\_\+framework.\+control.\+Interactable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1_program_view_adbd202dde535082052d25f8f493c1edf}{K\+A\+G\+O\+\_\+framework.\+view.\+Program\+View}}.
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_ab5adfb2c5be6e76ce7f56176b25771a6}\label{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_ab5adfb2c5be6e76ce7f56176b25771a6}} 
+\index{KAGO\_framework.model.InteractiveGraphicalObject@{KAGO\_framework.model.InteractiveGraphicalObject}!mouseClicked@{mouseClicked}}
+\index{mouseClicked@{mouseClicked}!KAGO\_framework.model.InteractiveGraphicalObject@{KAGO\_framework.model.InteractiveGraphicalObject}}
+\doxysubsubsection{\texorpdfstring{mouseClicked()}{mouseClicked()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+Interactive\+Graphical\+Object.\+mouse\+Clicked (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+Wird einmalig aufgerufen, wenn eine Maustaste geklickt wurde. 
+\begin{DoxyParams}{Parameters}
+{\em e} & Das übergebene Objekt der Klasse Mouse\+Event enthält alle Information über das Ereignis. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_k_a_g_o__framework_1_1control_1_1_interactable_a41f78fd7730ebf98c12280994d5088e9}{K\+A\+G\+O\+\_\+framework.\+control.\+Interactable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1_program_view_a166824dfd6125dccf02de790f5eff245}{K\+A\+G\+O\+\_\+framework.\+view.\+Program\+View}}.
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_aebb9ff2e9a4dc4af25f00eea14b1de10}\label{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_aebb9ff2e9a4dc4af25f00eea14b1de10}} 
+\index{KAGO\_framework.model.InteractiveGraphicalObject@{KAGO\_framework.model.InteractiveGraphicalObject}!mouseDragged@{mouseDragged}}
+\index{mouseDragged@{mouseDragged}!KAGO\_framework.model.InteractiveGraphicalObject@{KAGO\_framework.model.InteractiveGraphicalObject}}
+\doxysubsubsection{\texorpdfstring{mouseDragged()}{mouseDragged()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+Interactive\+Graphical\+Object.\+mouse\+Dragged (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+Wird einmalig aufgerufen, wenn eine Maustaste gehalten wird und die Maus bewegt wird. 
+\begin{DoxyParams}{Parameters}
+{\em e} & Das übergebene Objekt der Klasse Mouse\+Event enthält alle Information über das Ereignis. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_k_a_g_o__framework_1_1control_1_1_interactable_a8261aa0b91dc8722b97b4db9588aa520}{K\+A\+G\+O\+\_\+framework.\+control.\+Interactable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1_program_view_a86c7f038f9656c23df205f23403007dd}{K\+A\+G\+O\+\_\+framework.\+view.\+Program\+View}}.
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_aaafb1d90c42a66e66aeb3eb570ad6d18}\label{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_aaafb1d90c42a66e66aeb3eb570ad6d18}} 
+\index{KAGO\_framework.model.InteractiveGraphicalObject@{KAGO\_framework.model.InteractiveGraphicalObject}!mouseMoved@{mouseMoved}}
+\index{mouseMoved@{mouseMoved}!KAGO\_framework.model.InteractiveGraphicalObject@{KAGO\_framework.model.InteractiveGraphicalObject}}
+\doxysubsubsection{\texorpdfstring{mouseMoved()}{mouseMoved()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+Interactive\+Graphical\+Object.\+mouse\+Moved (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+Wird einmalig aufgerufen, wenn die Maus bewegt wurde. 
+\begin{DoxyParams}{Parameters}
+{\em e} & Das übergebene Objekt der Klasse Mouse\+Event enthält alle Information über das Ereignis. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_k_a_g_o__framework_1_1control_1_1_interactable_a5011ec007c680decd3ba1d2d0fb3581c}{K\+A\+G\+O\+\_\+framework.\+control.\+Interactable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1_program_view_a0c679750d2783eea4e3ba9ff87dcac6e}{K\+A\+G\+O\+\_\+framework.\+view.\+Program\+View}}.
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_a916868fd6d778cdc209fe2ce89734253}\label{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_a916868fd6d778cdc209fe2ce89734253}} 
+\index{KAGO\_framework.model.InteractiveGraphicalObject@{KAGO\_framework.model.InteractiveGraphicalObject}!mousePressed@{mousePressed}}
+\index{mousePressed@{mousePressed}!KAGO\_framework.model.InteractiveGraphicalObject@{KAGO\_framework.model.InteractiveGraphicalObject}}
+\doxysubsubsection{\texorpdfstring{mousePressed()}{mousePressed()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+Interactive\+Graphical\+Object.\+mouse\+Pressed (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+Wird einmalig aufgerufen, wenn eine Maustaste heruntergedrückt wurde. 
+\begin{DoxyParams}{Parameters}
+{\em e} & Das übergebene Objekt der Klasse Mouse\+Event enthält alle Information über das Ereignis. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_k_a_g_o__framework_1_1control_1_1_interactable_ac696789113f081bc59aaf1ebaa15bedc}{K\+A\+G\+O\+\_\+framework.\+control.\+Interactable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1_program_view_aec68e6b9fce82cc2e513cd1aa5d13740}{K\+A\+G\+O\+\_\+framework.\+view.\+Program\+View}}.
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_ad6522a3f6a39cc3d00e48f2af6cb098b}\label{class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object_ad6522a3f6a39cc3d00e48f2af6cb098b}} 
+\index{KAGO\_framework.model.InteractiveGraphicalObject@{KAGO\_framework.model.InteractiveGraphicalObject}!mouseReleased@{mouseReleased}}
+\index{mouseReleased@{mouseReleased}!KAGO\_framework.model.InteractiveGraphicalObject@{KAGO\_framework.model.InteractiveGraphicalObject}}
+\doxysubsubsection{\texorpdfstring{mouseReleased()}{mouseReleased()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+Interactive\+Graphical\+Object.\+mouse\+Released (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+Wird einmalig aufgerufen, wenn eine Maustaste losgelassen wurde. 
+\begin{DoxyParams}{Parameters}
+{\em e} & Das übergebene Objekt der Klasse Mouse\+Event enthält alle Information über das Ereignis. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_k_a_g_o__framework_1_1control_1_1_interactable_a2c4f9e2a02cbad45831216e459f2cbe8}{K\+A\+G\+O\+\_\+framework.\+control.\+Interactable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1_program_view_aadc56b8d4eb6958d9c16f5089c8a3b7f}{K\+A\+G\+O\+\_\+framework.\+view.\+Program\+View}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Eriks\+Bilderund\+Dateien/\+Git\+Hub/\+Git\+Hub/\+Scan\+Parse\+Project-\/\+Gradle/src/main/java/\+K\+A\+G\+O\+\_\+framework/model/\mbox{\hyperlink{_interactive_graphical_object_8java}{Interactive\+Graphical\+Object.\+java}}\end{DoxyCompactItemize}

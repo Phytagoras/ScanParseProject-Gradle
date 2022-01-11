@@ -1,0 +1,9 @@
+<map id="KAGO_framework.model.GraphicalObject" name="KAGO_framework.model.GraphicalObject">
+<area shape="rect" id="node1" title=" " alt="" coords="280,71,504,112"/>
+<area shape="rect" id="node3" href="$class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object.html" title=" " alt="" coords="552,5,779,47"/>
+<area shape="rect" id="node5" href="$class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_g_i_f_painter.html" title=" " alt="" coords="567,71,763,112"/>
+<area shape="rect" id="node6" href="$class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label.html" title=" " alt="" coords="567,136,763,177"/>
+<area shape="rect" id="node2" href="$interface_k_a_g_o__framework_1_1control_1_1_drawable.html" title=" " alt="" coords="5,78,232,105"/>
+<area shape="rect" id="node4" href="$class_k_a_g_o__framework_1_1view_1_1_program_view.html" title=" " alt="" coords="827,13,1061,39"/>
+<area shape="rect" id="node7" href="$class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button.html" title=" " alt="" coords="846,136,1042,177"/>
+</map>

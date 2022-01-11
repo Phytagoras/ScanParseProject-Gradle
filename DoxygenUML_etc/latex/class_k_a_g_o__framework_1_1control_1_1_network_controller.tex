@@ -1,0 +1,217 @@
+\hypertarget{class_k_a_g_o__framework_1_1control_1_1_network_controller}{}\doxysection{K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller Class Reference}
+\label{class_k_a_g_o__framework_1_1control_1_1_network_controller}\index{KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}}
+
+
+Collaboration diagram for K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1control_1_1_network_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_ac6bb5d0d1ff69aa9092e59457f901e89}{Network\+Controller}} (\mbox{\hyperlink{classmy__project_1_1control_1_1_program_controller}{Program\+Controller}} \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_a4eef615f4cba0c8f8c26075e084cc739}{program\+Controller}})
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_a9f157b740da8ae9006dbaf35849106a3}{start\+Network\+Scan}} (int \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_a7f728ac3d20c95dfcf665e0267af17f5}{port}})
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_ab4323ee3a1105f7eb364df781269bfe3}{start\+Connection}} ()
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_ac87663c34a5ed35c1073c7e53dc04021}{start\+Connection}} (String ip)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_a794d63c17410336f591a3e772a784226}{start\+Connection}} (String ip, int \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_a7f728ac3d20c95dfcf665e0267af17f5}{port}})
+\item 
+String \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_a2d79b2383390985433209d35c19c967c}{get\+Server\+IP}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_ae1200f55277d84d0e226fcb5f8b584df}{process\+Server\+Request}} (String msg)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_a7774f327aa82ff0abfedd3d2c319debf}{send}} (String msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Network\+Client \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_ab2b507378b91906b42d604f96956c12b}{network\+Client}}
+\item 
+\mbox{\hyperlink{classmy__project_1_1control_1_1_program_controller}{Program\+Controller}} \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_a4eef615f4cba0c8f8c26075e084cc739}{program\+Controller}}
+\item 
+String \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_a40e0384843b973410d2c5a1602df8f10}{server\+IP}}
+\item 
+int \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_a7f728ac3d20c95dfcf665e0267af17f5}{port}}
+\item 
+boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_a6fc2958d1eb145c2a99a9edc517b653a}{is\+Working}}
+\item 
+int \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_a2b45c8371ddad691956d49db367ca08e}{maximum\+Cycles}}
+\item 
+int \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller_a9723689962ceb52630a4b3a7f04c2686}{current\+Cycle}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Der Network-\/\+Controller kann eine Verbindung zu einem Server herstellen. Dazu verwendet er die Abiturklasse Client. Er ist fähig in einem lokalen Netzwerk nach einem offenen Server zu suchen. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_network_controller_ac6bb5d0d1ff69aa9092e59457f901e89}\label{class_k_a_g_o__framework_1_1control_1_1_network_controller_ac6bb5d0d1ff69aa9092e59457f901e89}} 
+\index{KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}!NetworkController@{NetworkController}}
+\index{NetworkController@{NetworkController}!KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}}
+\doxysubsubsection{\texorpdfstring{NetworkController()}{NetworkController()}}
+{\footnotesize\ttfamily K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller.\+Network\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmy__project_1_1control_1_1_program_controller}{Program\+Controller}}}]{program\+Controller }\end{DoxyParamCaption})}
+
+Erzeugt ein neues Objekt der Klasse \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_network_controller}{Network\+Controller}} 
+\begin{DoxyParams}{Parameters}
+{\em program\+Controller} & der zum Framework gehörende Program\+Controller \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_network_controller_a2d79b2383390985433209d35c19c967c}\label{class_k_a_g_o__framework_1_1control_1_1_network_controller_a2d79b2383390985433209d35c19c967c}} 
+\index{KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}!getServerIP@{getServerIP}}
+\index{getServerIP@{getServerIP}!KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}}
+\doxysubsubsection{\texorpdfstring{getServerIP()}{getServerIP()}}
+{\footnotesize\ttfamily String K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller.\+get\+Server\+IP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Die Rückgabe ist null, falls momentan keine IP bekannt ist und gesucht wird. Die Rückgabe ist \char`\"{}\+Timeout\char`\"{}, falls die Suche erfolglos eingestellt wurde. \begin{DoxyReturn}{Returns}
+die Server IP wie beschrieben 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_network_controller_ae1200f55277d84d0e226fcb5f8b584df}\label{class_k_a_g_o__framework_1_1control_1_1_network_controller_ae1200f55277d84d0e226fcb5f8b584df}} 
+\index{KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}!processServerRequest@{processServerRequest}}
+\index{processServerRequest@{processServerRequest}!KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}}
+\doxysubsubsection{\texorpdfstring{processServerRequest()}{processServerRequest()}}
+{\footnotesize\ttfamily abstract void K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller.\+process\+Server\+Request (\begin{DoxyParamCaption}\item[{String}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Zu implementierende Methode, die Reaktionen auf Nachrichten vom Server bestimmt. 
+\begin{DoxyParams}{Parameters}
+{\em msg} & Die vom Server eingehende Nachricht als String \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_network_controller_a7774f327aa82ff0abfedd3d2c319debf}\label{class_k_a_g_o__framework_1_1control_1_1_network_controller_a7774f327aa82ff0abfedd3d2c319debf}} 
+\index{KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}!send@{send}}
+\index{send@{send}!KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller.\+send (\begin{DoxyParamCaption}\item[{String}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Methode zum Senden von Strings an den Server 
+\begin{DoxyParams}{Parameters}
+{\em msg} & die Nachricht, die an den Server gesendet werden soll. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_network_controller_ab4323ee3a1105f7eb364df781269bfe3}\label{class_k_a_g_o__framework_1_1control_1_1_network_controller_ab4323ee3a1105f7eb364df781269bfe3}} 
+\index{KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}!startConnection@{startConnection}}
+\index{startConnection@{startConnection}!KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}}
+\doxysubsubsection{\texorpdfstring{startConnection()}{startConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller.\+start\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Erstellt einen neuen Client, der sich mit dem Server verbindet. Dafür müssen die nötigen Daten (IP und Port) vorliegen. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1control_1_1_network_controller_ab4323ee3a1105f7eb364df781269bfe3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_network_controller_ac87663c34a5ed35c1073c7e53dc04021}\label{class_k_a_g_o__framework_1_1control_1_1_network_controller_ac87663c34a5ed35c1073c7e53dc04021}} 
+\index{KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}!startConnection@{startConnection}}
+\index{startConnection@{startConnection}!KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}}
+\doxysubsubsection{\texorpdfstring{startConnection()}{startConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller.\+start\+Connection (\begin{DoxyParamCaption}\item[{String}]{ip }\end{DoxyParamCaption})}
+
+Verwendet den beim Scan verwendeten Port und die angegebene IP für einen sortigen Verbindungsversuch. 
+\begin{DoxyParams}{Parameters}
+{\em ip} & IP des Zielsystems \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1control_1_1_network_controller_ac87663c34a5ed35c1073c7e53dc04021_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_network_controller_a794d63c17410336f591a3e772a784226}\label{class_k_a_g_o__framework_1_1control_1_1_network_controller_a794d63c17410336f591a3e772a784226}} 
+\index{KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}!startConnection@{startConnection}}
+\index{startConnection@{startConnection}!KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}}
+\doxysubsubsection{\texorpdfstring{startConnection()}{startConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller.\+start\+Connection (\begin{DoxyParamCaption}\item[{String}]{ip,  }\item[{int}]{port }\end{DoxyParamCaption})}
+
+Versucht sofort eine Verbindung zum Zielsystem herzustellen. 
+\begin{DoxyParams}{Parameters}
+{\em ip} & IP des Zielsystems. \\
+\hline
+{\em port} & Port der Serveranwendung auf dem Zielsystem. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1control_1_1_network_controller_a794d63c17410336f591a3e772a784226_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_network_controller_a9f157b740da8ae9006dbaf35849106a3}\label{class_k_a_g_o__framework_1_1control_1_1_network_controller_a9f157b740da8ae9006dbaf35849106a3}} 
+\index{KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}!startNetworkScan@{startNetworkScan}}
+\index{startNetworkScan@{startNetworkScan}!KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}}
+\doxysubsubsection{\texorpdfstring{startNetworkScan()}{startNetworkScan()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller.\+start\+Network\+Scan (\begin{DoxyParamCaption}\item[{int}]{port }\end{DoxyParamCaption})}
+
+Initiiert einen Netzwerkscan auf dem entsprechenden Port. Falls ein Server entdeckt wird, wird die IP im String server\+IP gesetzt. Solange gescannt wird, ist diese null, wenn es kein Ergebnis gibt, ist sie gleich timeout 
+\begin{DoxyParams}{Parameters}
+{\em port} & Der zu prüfende Port \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_network_controller_a9723689962ceb52630a4b3a7f04c2686}\label{class_k_a_g_o__framework_1_1control_1_1_network_controller_a9723689962ceb52630a4b3a7f04c2686}} 
+\index{KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}!currentCycle@{currentCycle}}
+\index{currentCycle@{currentCycle}!KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}}
+\doxysubsubsection{\texorpdfstring{currentCycle}{currentCycle}}
+{\footnotesize\ttfamily int K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller.\+current\+Cycle\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_network_controller_a6fc2958d1eb145c2a99a9edc517b653a}\label{class_k_a_g_o__framework_1_1control_1_1_network_controller_a6fc2958d1eb145c2a99a9edc517b653a}} 
+\index{KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}!isWorking@{isWorking}}
+\index{isWorking@{isWorking}!KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}}
+\doxysubsubsection{\texorpdfstring{isWorking}{isWorking}}
+{\footnotesize\ttfamily boolean K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller.\+is\+Working\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_network_controller_a2b45c8371ddad691956d49db367ca08e}\label{class_k_a_g_o__framework_1_1control_1_1_network_controller_a2b45c8371ddad691956d49db367ca08e}} 
+\index{KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}!maximumCycles@{maximumCycles}}
+\index{maximumCycles@{maximumCycles}!KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}}
+\doxysubsubsection{\texorpdfstring{maximumCycles}{maximumCycles}}
+{\footnotesize\ttfamily int K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller.\+maximum\+Cycles\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_network_controller_ab2b507378b91906b42d604f96956c12b}\label{class_k_a_g_o__framework_1_1control_1_1_network_controller_ab2b507378b91906b42d604f96956c12b}} 
+\index{KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}!networkClient@{networkClient}}
+\index{networkClient@{networkClient}!KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}}
+\doxysubsubsection{\texorpdfstring{networkClient}{networkClient}}
+{\footnotesize\ttfamily Network\+Client K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller.\+network\+Client\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_network_controller_a7f728ac3d20c95dfcf665e0267af17f5}\label{class_k_a_g_o__framework_1_1control_1_1_network_controller_a7f728ac3d20c95dfcf665e0267af17f5}} 
+\index{KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}!port@{port}}
+\index{port@{port}!KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}}
+\doxysubsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily int K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller.\+port\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_network_controller_a4eef615f4cba0c8f8c26075e084cc739}\label{class_k_a_g_o__framework_1_1control_1_1_network_controller_a4eef615f4cba0c8f8c26075e084cc739}} 
+\index{KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}!programController@{programController}}
+\index{programController@{programController}!KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}}
+\doxysubsubsection{\texorpdfstring{programController}{programController}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmy__project_1_1control_1_1_program_controller}{Program\+Controller}} K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller.\+program\+Controller\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_network_controller_a40e0384843b973410d2c5a1602df8f10}\label{class_k_a_g_o__framework_1_1control_1_1_network_controller_a40e0384843b973410d2c5a1602df8f10}} 
+\index{KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}!serverIP@{serverIP}}
+\index{serverIP@{serverIP}!KAGO\_framework.control.NetworkController@{KAGO\_framework.control.NetworkController}}
+\doxysubsubsection{\texorpdfstring{serverIP}{serverIP}}
+{\footnotesize\ttfamily String K\+A\+G\+O\+\_\+framework.\+control.\+Network\+Controller.\+server\+IP\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Eriks\+Bilderund\+Dateien/\+Git\+Hub/\+Git\+Hub/\+Scan\+Parse\+Project-\/\+Gradle/src/main/java/\+K\+A\+G\+O\+\_\+framework/control/\mbox{\hyperlink{_network_controller_8java}{Network\+Controller.\+java}}\end{DoxyCompactItemize}

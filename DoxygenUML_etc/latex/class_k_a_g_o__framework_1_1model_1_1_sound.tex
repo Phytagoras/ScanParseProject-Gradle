@@ -1,0 +1,180 @@
+\hypertarget{class_k_a_g_o__framework_1_1model_1_1_sound}{}\doxysection{K\+A\+G\+O\+\_\+framework.\+model.\+Sound Class Reference}
+\label{class_k_a_g_o__framework_1_1model_1_1_sound}\index{KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound_a79a23448ef8c9e05ad35ece11943ffa2}{Sound}} (String filename, String name, boolean loop)
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound_aadc673585d845b120756f51199e6f992}{Sound}} (String filename, String name)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound_af5b059b195510356a55cfed208a57266}{play}} ()
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound_aefcda639cb3a0c322b63663c647dd47d}{stop}} ()
+\item 
+boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound_ae9e62dd0ec1d14374217b0dcbbffc360}{is\+Playing}} ()
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound_ad8db3a9dc1db55b61814b3e98f3d2b99}{set\+Volume}} (double v)
+\item 
+double \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound_a62883cd4ac9f635cbd83af05d8c679d2}{get\+Volume}} ()
+\item 
+String \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound_a72eca7163ca54f25632f9dcbc014849a}{get\+Filename}} ()
+\item 
+String \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound_ab8ea81a9fe5cc1e14cc30fbf07b13845}{get\+Name}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ein Objekt dieser Klasse repräsentiert die Daten für einen speziellen \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound}{Sound}}. Diese Klasse muss N\+I\+C\+HT benutzt werden. Alle Aufgaben sind über ein Objekt der Klasse Sound\+Controller zu erledigen. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1_sound_a79a23448ef8c9e05ad35ece11943ffa2}\label{class_k_a_g_o__framework_1_1model_1_1_sound_a79a23448ef8c9e05ad35ece11943ffa2}} 
+\index{KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}!Sound@{Sound}}
+\index{Sound@{Sound}!KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}}
+\doxysubsubsection{\texorpdfstring{Sound()}{Sound()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily K\+A\+G\+O\+\_\+framework.\+model.\+Sound.\+Sound (\begin{DoxyParamCaption}\item[{String}]{filename,  }\item[{String}]{name,  }\item[{boolean}]{loop }\end{DoxyParamCaption})}
+
+Erzeugt einen neuen \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound}{Sound}} mit Angabe, ob er wiederholt werden soll. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Der Dateiname im Verzeichnis assets. Zum Beispiel \char`\"{}/sounds/wuff.\+mp3\char`\"{} Möglich sind die meisten Sound-\/\+Dateien. \\
+\hline
+{\em name} & Der Name unter dem der \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound}{Sound}} im Programm verwendet werden soll. Er muss E\+I\+N\+D\+E\+U\+T\+IG sein. \\
+\hline
+{\em loop} & Ob der \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound}{Sound}} wiederholt werden soll, wenn er fertig gespielt ist. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1_sound_aadc673585d845b120756f51199e6f992}\label{class_k_a_g_o__framework_1_1model_1_1_sound_aadc673585d845b120756f51199e6f992}} 
+\index{KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}!Sound@{Sound}}
+\index{Sound@{Sound}!KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}}
+\doxysubsubsection{\texorpdfstring{Sound()}{Sound()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily K\+A\+G\+O\+\_\+framework.\+model.\+Sound.\+Sound (\begin{DoxyParamCaption}\item[{String}]{filename,  }\item[{String}]{name }\end{DoxyParamCaption})}
+
+Erzeugt einen neuen \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound}{Sound}} mit Angabe, ob er wiederholt werden soll. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Der Dateiname im Verzeichnis. Zum Beispiel \char`\"{}assets/sounds/wuff.\+mp3\char`\"{} Möglich sind die meisten Sound-\/\+Dateien. \\
+\hline
+{\em name} & Der Name unter dem der \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound}{Sound}} im Programm verwendet werden soll. Er muss E\+I\+N\+D\+E\+U\+T\+IG sein. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1_sound_a72eca7163ca54f25632f9dcbc014849a}\label{class_k_a_g_o__framework_1_1model_1_1_sound_a72eca7163ca54f25632f9dcbc014849a}} 
+\index{KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}!getFilename@{getFilename}}
+\index{getFilename@{getFilename}!KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}}
+\doxysubsubsection{\texorpdfstring{getFilename()}{getFilename()}}
+{\footnotesize\ttfamily String K\+A\+G\+O\+\_\+framework.\+model.\+Sound.\+get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Liefert den Dateinamen der Sounddatei zurück. \begin{DoxyReturn}{Returns}
+der Pfad zur Datei 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1_sound_a72eca7163ca54f25632f9dcbc014849a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1_sound_ab8ea81a9fe5cc1e14cc30fbf07b13845}\label{class_k_a_g_o__framework_1_1model_1_1_sound_ab8ea81a9fe5cc1e14cc30fbf07b13845}} 
+\index{KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}!getName@{getName}}
+\index{getName@{getName}!KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily String K\+A\+G\+O\+\_\+framework.\+model.\+Sound.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Liefert den Namen des Sounds zurück. \begin{DoxyReturn}{Returns}
+der Name (muss eindeutig sein) 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1_sound_ab8ea81a9fe5cc1e14cc30fbf07b13845_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1_sound_a62883cd4ac9f635cbd83af05d8c679d2}\label{class_k_a_g_o__framework_1_1model_1_1_sound_a62883cd4ac9f635cbd83af05d8c679d2}} 
+\index{KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}!getVolume@{getVolume}}
+\index{getVolume@{getVolume}!KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}}
+\doxysubsubsection{\texorpdfstring{getVolume()}{getVolume()}}
+{\footnotesize\ttfamily double K\+A\+G\+O\+\_\+framework.\+model.\+Sound.\+get\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gibt die aktuelle Lautstärke zurück. \begin{DoxyReturn}{Returns}
+die Lautstärke zwischen 0 und 1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1_sound_ae9e62dd0ec1d14374217b0dcbbffc360}\label{class_k_a_g_o__framework_1_1model_1_1_sound_ae9e62dd0ec1d14374217b0dcbbffc360}} 
+\index{KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}!isPlaying@{isPlaying}}
+\index{isPlaying@{isPlaying}!KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}}
+\doxysubsubsection{\texorpdfstring{isPlaying()}{isPlaying()}}
+{\footnotesize\ttfamily boolean K\+A\+G\+O\+\_\+framework.\+model.\+Sound.\+is\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Überprüft, ob der \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound}{Sound}} gerade abgespielt wird. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1_sound_ae9e62dd0ec1d14374217b0dcbbffc360_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1_sound_af5b059b195510356a55cfed208a57266}\label{class_k_a_g_o__framework_1_1model_1_1_sound_af5b059b195510356a55cfed208a57266}} 
+\index{KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}!play@{play}}
+\index{play@{play}!KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+Sound.\+play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Spielt den \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound}{Sound}} ab. Wichtiger Hinweis\+: die mp3-\/\+Datei kann evtl. nicht wiedergegeben werden, wenn spezielle Album-\/\+Art oder ähnliches integriert ist -\/ bei Problemen erst andere mp3s testen Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1_sound_af5b059b195510356a55cfed208a57266_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1_sound_af5b059b195510356a55cfed208a57266_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1_sound_ad8db3a9dc1db55b61814b3e98f3d2b99}\label{class_k_a_g_o__framework_1_1model_1_1_sound_ad8db3a9dc1db55b61814b3e98f3d2b99}} 
+\index{KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+Sound.\+set\+Volume (\begin{DoxyParamCaption}\item[{double}]{v }\end{DoxyParamCaption})}
+
+Setzt die Lautstärke 
+\begin{DoxyParams}{Parameters}
+{\em v} & die neue Lautstärke zwischen 0 und 1 \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1_sound_ad8db3a9dc1db55b61814b3e98f3d2b99_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1_sound_aefcda639cb3a0c322b63663c647dd47d}\label{class_k_a_g_o__framework_1_1model_1_1_sound_aefcda639cb3a0c322b63663c647dd47d}} 
+\index{KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}!stop@{stop}}
+\index{stop@{stop}!KAGO\_framework.model.Sound@{KAGO\_framework.model.Sound}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+Sound.\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stoppt den \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_sound}{Sound}}. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1_sound_aefcda639cb3a0c322b63663c647dd47d_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Eriks\+Bilderund\+Dateien/\+Git\+Hub/\+Git\+Hub/\+Scan\+Parse\+Project-\/\+Gradle/src/main/java/\+K\+A\+G\+O\+\_\+framework/model/\mbox{\hyperlink{_sound_8java}{Sound.\+java}}\end{DoxyCompactItemize}

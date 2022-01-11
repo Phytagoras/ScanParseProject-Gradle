@@ -1,0 +1,6 @@
+<map id="KAGO_framework.control.Interactable" name="KAGO_framework.control.Interactable">
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,245,73"/>
+<area shape="rect" id="node2" href="$class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object.html" title=" " alt="" coords="293,5,520,47"/>
+<area shape="rect" id="node4" href="$class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button.html" title=" " alt="" coords="309,71,505,112"/>
+<area shape="rect" id="node3" href="$class_k_a_g_o__framework_1_1view_1_1_program_view.html" title=" " alt="" coords="568,13,803,39"/>
+</map>

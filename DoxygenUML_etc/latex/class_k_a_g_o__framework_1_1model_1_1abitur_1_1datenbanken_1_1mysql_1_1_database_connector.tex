@@ -1,0 +1,80 @@
+\hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector}{}\doxysection{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenbanken.\+mysql.\+Database\+Connector Class Reference}
+\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector}\index{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector_a612be86367a41f226d8204fe7125865e}{Database\+Connector}} (String p\+IP, int p\+Port, String p\+Database, String p\+Username, String p\+Password)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector_a69e0866457f55099bb3d1443aa9d9bd4}{execute\+Statement}} (String p\+S\+Q\+L\+Statement)
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_query_result}{Query\+Result}} \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector_aed44f9a0a4ee3e934d047856b829d5c6}{get\+Current\+Query\+Result}} ()
+\item 
+String \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector_a023ed265b0aaa3431e165f43105728e8}{get\+Error\+Message}} ()
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector_afaf5b24feb12eef0408694c198c67785}{close}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Materialien zu den zentralen N\+R\+W-\/\+Abiturpruefungen im Fach Informatik ab 2018 
+
+Klasse \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector}{Database\+Connector}} 
+
+Ein Objekt der Klasse \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector}{Database\+Connector}} ermoeglicht die Abfrage und Manipulation einer My\+S\+Q\+L-\/\+Datenbank. Beim Erzeugen des Objekts wird eine Datenbankverbindung aufgebaut, so dass anschließend S\+Q\+L-\/\+Anweisungen an diese Datenbank gerichtet werden koennen. 
+
+\begin{DoxyAuthor}{Author}
+Qualitaets-\/ und Unterstuetzungs\+Agentur -\/ Landesinstitut fuer Schule 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2016-\/01-\/24 
+\end{DoxyVersion}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector_a612be86367a41f226d8204fe7125865e}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector_a612be86367a41f226d8204fe7125865e}} 
+\index{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector}!DatabaseConnector@{DatabaseConnector}}
+\index{DatabaseConnector@{DatabaseConnector}!KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector}}
+\doxysubsubsection{\texorpdfstring{DatabaseConnector()}{DatabaseConnector()}}
+{\footnotesize\ttfamily K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenbanken.\+mysql.\+Database\+Connector.\+Database\+Connector (\begin{DoxyParamCaption}\item[{String}]{p\+IP,  }\item[{int}]{p\+Port,  }\item[{String}]{p\+Database,  }\item[{String}]{p\+Username,  }\item[{String}]{p\+Password }\end{DoxyParamCaption})}
+
+Ein Objekt vom Typ \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector}{Database\+Connector}} wird erstellt, und eine Verbindung zur Datenbank wird aufgebaut. Mit den Parametern p\+IP und p\+Port werden die I\+P-\/\+Adresse und die Port-\/\+Nummer uebergeben, unter denen die Datenbank mit Namen p\+Database zu erreichen ist. Mit den Parametern p\+Username und p\+Password werden Benutzername und Passwort fuer die Datenbank uebergeben. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector_afaf5b24feb12eef0408694c198c67785}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector_afaf5b24feb12eef0408694c198c67785}} 
+\index{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector}!close@{close}}
+\index{close@{close}!KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenbanken.\+mysql.\+Database\+Connector.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Die Datenbankverbindung wird geschlossen. \mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector_a69e0866457f55099bb3d1443aa9d9bd4}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector_a69e0866457f55099bb3d1443aa9d9bd4}} 
+\index{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector}!executeStatement@{executeStatement}}
+\index{executeStatement@{executeStatement}!KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector}}
+\doxysubsubsection{\texorpdfstring{executeStatement()}{executeStatement()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenbanken.\+mysql.\+Database\+Connector.\+execute\+Statement (\begin{DoxyParamCaption}\item[{String}]{p\+S\+Q\+L\+Statement }\end{DoxyParamCaption})}
+
+Der Auftrag schickt den im Parameter p\+S\+Q\+L\+Statement enthaltenen S\+Q\+L-\/\+Befehl an die Datenbank ab. Handelt es sich bei p\+S\+Q\+L\+Statement um einen S\+Q\+L-\/\+Befehl, der eine Ergebnismenge liefert, so kann dieses Ergebnis anschließend mit der Methode get\+Current\+Query\+Result abgerufen werden. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector_a69e0866457f55099bb3d1443aa9d9bd4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector_aed44f9a0a4ee3e934d047856b829d5c6}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector_aed44f9a0a4ee3e934d047856b829d5c6}} 
+\index{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector}!getCurrentQueryResult@{getCurrentQueryResult}}
+\index{getCurrentQueryResult@{getCurrentQueryResult}!KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector}}
+\doxysubsubsection{\texorpdfstring{getCurrentQueryResult()}{getCurrentQueryResult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_query_result}{Query\+Result}} K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenbanken.\+mysql.\+Database\+Connector.\+get\+Current\+Query\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Die Anfrage liefert das Ergebnis des letzten mit der Methode execute\+Statement an die Datenbank geschickten S\+Q\+L-\/\+Befehls als Ob-\/jekt vom Typ \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_query_result}{Query\+Result}} zurueck. Wurde bisher kein S\+Q\+L-\/\+Befehl abgeschickt oder ergab der letzte Aufruf von execute\+Statement keine Ergebnismenge (z.\+B. bei einem I\+N\+S\+E\+R\+T-\/\+Befehl oder einem Syntaxfehler), so wird null geliefert. ~\newline
+ \mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector_a023ed265b0aaa3431e165f43105728e8}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector_a023ed265b0aaa3431e165f43105728e8}} 
+\index{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector}!getErrorMessage@{getErrorMessage}}
+\index{getErrorMessage@{getErrorMessage}!KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.mysql.DatabaseConnector}}
+\doxysubsubsection{\texorpdfstring{getErrorMessage()}{getErrorMessage()}}
+{\footnotesize\ttfamily String K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenbanken.\+mysql.\+Database\+Connector.\+get\+Error\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Die Anfrage liefert null oder eine Fehlermeldung, die sich jeweils auf die letzte zuvor ausgefuehrte Datenbankoperation bezieht. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Eriks\+Bilderund\+Dateien/\+Git\+Hub/\+Git\+Hub/\+Scan\+Parse\+Project-\/\+Gradle/src/main/java/\+K\+A\+G\+O\+\_\+framework/model/abitur/datenbanken/mysql/\mbox{\hyperlink{mysql_2_database_connector_8java}{Database\+Connector.\+java}}\end{DoxyCompactItemize}

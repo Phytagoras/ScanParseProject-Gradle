@@ -1,0 +1,80 @@
+\hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector}{}\doxysection{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenbanken.\+sqllite.\+Database\+Connector Class Reference}
+\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector}\index{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector_aabd73bf5ecc5b18a55a2eeaaeebb8d9a}{Database\+Connector}} (String p\+IP, int p\+Port, String p\+Database, String p\+Username, String p\+Password)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector_a3aa44cdfac8a1b0ee4d12377d6094900}{execute\+Statement}} (String p\+S\+Q\+L\+Statement)
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_query_result}{Query\+Result}} \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector_a86a0faeb308bb3df766963775a5cdfff}{get\+Current\+Query\+Result}} ()
+\item 
+String \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector_af572924ae4db152b072894e7a1f110b5}{get\+Error\+Message}} ()
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector_abd3c757375feab7c22be7ce2a2628652}{close}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Materialien zu den zentralen N\+R\+W-\/\+Abiturpruefungen im Fach Informatik ab 2018 
+
+Klasse \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector}{Database\+Connector}} 
+
+Ein Objekt der Klasse \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector}{Database\+Connector}} ermoeglicht die Abfrage und Manipulation einer S\+Q\+Lite-\/\+Datenbank. Beim Erzeugen des Objekts wird eine Datenbankverbindung aufgebaut, so dass anschließend S\+Q\+L-\/\+Anweisungen an diese Datenbank gerichtet werden koennen. 
+
+\begin{DoxyAuthor}{Author}
+Qualitaets-\/ und Unterstuetzungs\+Agentur -\/ Landesinstitut fuer Schule 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2016-\/01-\/24 
+\end{DoxyVersion}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector_aabd73bf5ecc5b18a55a2eeaaeebb8d9a}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector_aabd73bf5ecc5b18a55a2eeaaeebb8d9a}} 
+\index{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector}!DatabaseConnector@{DatabaseConnector}}
+\index{DatabaseConnector@{DatabaseConnector}!KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector}}
+\doxysubsubsection{\texorpdfstring{DatabaseConnector()}{DatabaseConnector()}}
+{\footnotesize\ttfamily K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenbanken.\+sqllite.\+Database\+Connector.\+Database\+Connector (\begin{DoxyParamCaption}\item[{String}]{p\+IP,  }\item[{int}]{p\+Port,  }\item[{String}]{p\+Database,  }\item[{String}]{p\+Username,  }\item[{String}]{p\+Password }\end{DoxyParamCaption})}
+
+Ein Objekt vom Typ \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector}{Database\+Connector}} wird erstellt, und eine Verbindung zur Datenbank wird aufgebaut. Mit den Parametern p\+IP und p\+Port werden die I\+P-\/\+Adresse und die Port-\/\+Nummer uebergeben, unter denen die Datenbank mit Namen p\+Database zu erreichen ist. Mit den Parametern p\+Username und p\+Password werden Benutzername und Passwort fuer die Datenbank uebergeben. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector_abd3c757375feab7c22be7ce2a2628652}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector_abd3c757375feab7c22be7ce2a2628652}} 
+\index{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector}!close@{close}}
+\index{close@{close}!KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenbanken.\+sqllite.\+Database\+Connector.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Die Datenbankverbindung wird geschlossen. \mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector_a3aa44cdfac8a1b0ee4d12377d6094900}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector_a3aa44cdfac8a1b0ee4d12377d6094900}} 
+\index{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector}!executeStatement@{executeStatement}}
+\index{executeStatement@{executeStatement}!KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector}}
+\doxysubsubsection{\texorpdfstring{executeStatement()}{executeStatement()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenbanken.\+sqllite.\+Database\+Connector.\+execute\+Statement (\begin{DoxyParamCaption}\item[{String}]{p\+S\+Q\+L\+Statement }\end{DoxyParamCaption})}
+
+Der Auftrag schickt den im Parameter p\+S\+Q\+L\+Statement enthaltenen S\+Q\+L-\/\+Befehl an die Datenbank ab. Handelt es sich bei p\+S\+Q\+L\+Statement um einen S\+Q\+L-\/\+Befehl, der eine Ergebnismenge liefert, so kann dieses Ergebnis anschließend mit der Methode get\+Current\+Query\+Result abgerufen werden. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector_a3aa44cdfac8a1b0ee4d12377d6094900_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector_a86a0faeb308bb3df766963775a5cdfff}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector_a86a0faeb308bb3df766963775a5cdfff}} 
+\index{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector}!getCurrentQueryResult@{getCurrentQueryResult}}
+\index{getCurrentQueryResult@{getCurrentQueryResult}!KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector}}
+\doxysubsubsection{\texorpdfstring{getCurrentQueryResult()}{getCurrentQueryResult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_query_result}{Query\+Result}} K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenbanken.\+sqllite.\+Database\+Connector.\+get\+Current\+Query\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Die Anfrage liefert das Ergebnis des letzten mit der Methode execute\+Statement an die Datenbank geschickten S\+Q\+L-\/\+Befehls als Ob-\/jekt vom Typ \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_query_result}{Query\+Result}} zurueck. Wurde bisher kein S\+Q\+L-\/\+Befehl abgeschickt oder ergab der letzte Aufruf von execute\+Statement keine Ergebnismenge (z.\+B. bei einem I\+N\+S\+E\+R\+T-\/\+Befehl oder einem Syntaxfehler), so wird null geliefert. ~\newline
+ \mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector_af572924ae4db152b072894e7a1f110b5}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector_af572924ae4db152b072894e7a1f110b5}} 
+\index{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector}!getErrorMessage@{getErrorMessage}}
+\index{getErrorMessage@{getErrorMessage}!KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector@{KAGO\_framework.model.abitur.datenbanken.sqllite.DatabaseConnector}}
+\doxysubsubsection{\texorpdfstring{getErrorMessage()}{getErrorMessage()}}
+{\footnotesize\ttfamily String K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenbanken.\+sqllite.\+Database\+Connector.\+get\+Error\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Die Anfrage liefert null oder eine Fehlermeldung, die sich jeweils auf die letzte zuvor ausgefuehrte Datenbankoperation bezieht. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Eriks\+Bilderund\+Dateien/\+Git\+Hub/\+Git\+Hub/\+Scan\+Parse\+Project-\/\+Gradle/src/main/java/\+K\+A\+G\+O\+\_\+framework/model/abitur/datenbanken/sqllite/\mbox{\hyperlink{sqllite_2_database_connector_8java}{Database\+Connector.\+java}}\end{DoxyCompactItemize}

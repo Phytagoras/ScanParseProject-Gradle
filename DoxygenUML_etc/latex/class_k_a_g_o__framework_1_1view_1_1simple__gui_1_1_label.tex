@@ -1,0 +1,127 @@
+\hypertarget{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label}{}\doxysection{K\+A\+G\+O\+\_\+framework.\+view.\+simple\+\_\+gui.\+Label Class Reference}
+\label{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label}\index{KAGO\_framework.view.simple\_gui.Label@{KAGO\_framework.view.simple\_gui.Label}}
+
+
+Inheritance diagram for K\+A\+G\+O\+\_\+framework.\+view.\+simple\+\_\+gui.\+Label\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for K\+A\+G\+O\+\_\+framework.\+view.\+simple\+\_\+gui.\+Label\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label_a92ae0bd6c46083c76a3030857f478d00}{Label}} (double \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_graphical_object_a8187f359984f0b43662d5be0bb286eca}{x}}, double y, String text, int size, boolean has\+Border)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label_a21e7d7645e0beffdf33f9d8ad873e887}{set\+Font}} (String font)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label_abf6c1f3cc55c56252b58b96bee0e912a}{draw}} (\mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1_draw_tool}{Draw\+Tool}} draw\+Tool)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label_a5a22ba4c4b7f46a754d8ce29fca0a426}{update}} (double dt)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label_a90579a1c3538b188cb5e4350eef0f409}{set\+Text}} (String text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Repräsentiert ein \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label}{Label}}, also ein Textschildchen in einem Fenster 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label_a92ae0bd6c46083c76a3030857f478d00}\label{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label_a92ae0bd6c46083c76a3030857f478d00}} 
+\index{KAGO\_framework.view.simple\_gui.Label@{KAGO\_framework.view.simple\_gui.Label}!Label@{Label}}
+\index{Label@{Label}!KAGO\_framework.view.simple\_gui.Label@{KAGO\_framework.view.simple\_gui.Label}}
+\doxysubsubsection{\texorpdfstring{Label()}{Label()}}
+{\footnotesize\ttfamily K\+A\+G\+O\+\_\+framework.\+view.\+simple\+\_\+gui.\+Label.\+Label (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{String}]{text,  }\item[{int}]{size,  }\item[{boolean}]{has\+Border }\end{DoxyParamCaption})}
+
+Erzeugt ein Labelobjekt. Dieses wird nicht automatisch gezeichnet! 
+\begin{DoxyParams}{Parameters}
+{\em x} & x obere linke Ecke \\
+\hline
+{\em y} & y obere linke Ecke \\
+\hline
+{\em text} & Text für das \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label}{Label}} \\
+\hline
+{\em size} & Textgröße für das \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label}{Label}} \\
+\hline
+{\em has\+Border} & Ob das \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label}{Label}} einen Rahmen haben soll \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label_abf6c1f3cc55c56252b58b96bee0e912a}\label{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label_abf6c1f3cc55c56252b58b96bee0e912a}} 
+\index{KAGO\_framework.view.simple\_gui.Label@{KAGO\_framework.view.simple\_gui.Label}!draw@{draw}}
+\index{draw@{draw}!KAGO\_framework.view.simple\_gui.Label@{KAGO\_framework.view.simple\_gui.Label}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+view.\+simple\+\_\+gui.\+Label.\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1_draw_tool}{Draw\+Tool}}}]{draw\+Tool }\end{DoxyParamCaption})}
+
+Wird vom Hintergrundprozess für jeden Frame aufgerufen. Nur hier kann die grafische Repräsentation des Objekts realisiert werden. Es ist möglich über das Grafikobjekt \char`\"{}draw\+Tool\char`\"{} ein Bild zeichnen zu lassen, aber auch geometrische Formen sind machbar. 
+
+Reimplemented from \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_graphical_object_afc35e6db0daed5b86e62c3e2ba40a60d}{K\+A\+G\+O\+\_\+framework.\+model.\+Graphical\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_a31052e85ea9a271d93d5bb223dc60ef7}{K\+A\+G\+O\+\_\+framework.\+view.\+simple\+\_\+gui.\+Button}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label_abf6c1f3cc55c56252b58b96bee0e912a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label_a21e7d7645e0beffdf33f9d8ad873e887}\label{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label_a21e7d7645e0beffdf33f9d8ad873e887}} 
+\index{KAGO\_framework.view.simple\_gui.Label@{KAGO\_framework.view.simple\_gui.Label}!setFont@{setFont}}
+\index{setFont@{setFont}!KAGO\_framework.view.simple\_gui.Label@{KAGO\_framework.view.simple\_gui.Label}}
+\doxysubsubsection{\texorpdfstring{setFont()}{setFont()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+view.\+simple\+\_\+gui.\+Label.\+set\+Font (\begin{DoxyParamCaption}\item[{String}]{font }\end{DoxyParamCaption})}
+
+Ändert die Schriftart 
+\begin{DoxyParams}{Parameters}
+{\em font} & Gewünschte Schriftart \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label_a90579a1c3538b188cb5e4350eef0f409}\label{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label_a90579a1c3538b188cb5e4350eef0f409}} 
+\index{KAGO\_framework.view.simple\_gui.Label@{KAGO\_framework.view.simple\_gui.Label}!setText@{setText}}
+\index{setText@{setText}!KAGO\_framework.view.simple\_gui.Label@{KAGO\_framework.view.simple\_gui.Label}}
+\doxysubsubsection{\texorpdfstring{setText()}{setText()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+view.\+simple\+\_\+gui.\+Label.\+set\+Text (\begin{DoxyParamCaption}\item[{String}]{text }\end{DoxyParamCaption})}
+
+Ändert den Text des Labels 
+\begin{DoxyParams}{Parameters}
+{\em text} & der neue Text \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label_a5a22ba4c4b7f46a754d8ce29fca0a426}\label{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label_a5a22ba4c4b7f46a754d8ce29fca0a426}} 
+\index{KAGO\_framework.view.simple\_gui.Label@{KAGO\_framework.view.simple\_gui.Label}!update@{update}}
+\index{update@{update}!KAGO\_framework.view.simple\_gui.Label@{KAGO\_framework.view.simple\_gui.Label}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+view.\+simple\+\_\+gui.\+Label.\+update (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})}
+
+Wird vom Hintergrundprozess für jeden Frame aufgerufen. Hier kann das verhalten des Objekts festgelegt werden, zum Beispiel seine Bewegung. 
+
+Reimplemented from \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1_graphical_object_abeb525195d7cc36593651a24224f22c4}{K\+A\+G\+O\+\_\+framework.\+model.\+Graphical\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_abb79054dcd1b3880c1e69d117aa10b19}{K\+A\+G\+O\+\_\+framework.\+view.\+simple\+\_\+gui.\+Button}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Eriks\+Bilderund\+Dateien/\+Git\+Hub/\+Git\+Hub/\+Scan\+Parse\+Project-\/\+Gradle/src/main/java/\+K\+A\+G\+O\+\_\+framework/view/simple\+\_\+gui/\mbox{\hyperlink{_label_8java}{Label.\+java}}\end{DoxyCompactItemize}

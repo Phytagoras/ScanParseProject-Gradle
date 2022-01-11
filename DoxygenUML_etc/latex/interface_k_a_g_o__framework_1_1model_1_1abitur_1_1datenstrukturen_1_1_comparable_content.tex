@@ -1,0 +1,83 @@
+\hypertarget{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content}{}\doxysection{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Comparable\+Content$<$ Content\+Type $>$ Interface Template Reference}
+\label{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content}\index{KAGO\_framework.model.abitur.datenstrukturen.ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.ComparableContent$<$ ContentType $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content_aa79970cd9a782f7dbdaf307f71fe05f1}{is\+Greater}} (Content\+Type p\+Content)
+\item 
+boolean \mbox{\hyperlink{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content_aee7b9c5d594a22060d315f62ba92d732}{is\+Equal}} (Content\+Type p\+Content)
+\item 
+boolean \mbox{\hyperlink{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content_a090aa2b72e106a2bc007c820b34e1ccc}{is\+Less}} (Content\+Type p\+Content)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Materialien zu den zentralen N\+R\+W-\/\+Abiturpruefungen im Fach Informatik ab 2018 
+
+Generisches Interface (Schnittstelle) Comparable\+Content$<$\+Content\+Type$>$ 
+
+Das generische Interface Comparable\+Content$<$\+Content\+Type$>$ legt die Methoden fest, ueber die Objekte verfuegen muessen, die in einen binaeren Suchbaum (\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{Binary\+Search\+Tree}}) eingefuegt werden sollen. Die Ordnungsrelation wird in Klassen, die \mbox{\hyperlink{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content}{Comparable\+Content}} implementieren durch Ueberschreiben der drei implizit abstrakten Methoden is\+Greater, is\+Equal und is\+Less festgelegt. 
+
+\begin{DoxyAuthor}{Author}
+Qualitaets-\/ und Unterstuetzungs\+Agentur -\/ Landesinstitut fuer Schule 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+Generisch\+\_\+02 2014-\/03-\/01 
+\end{DoxyVersion}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content_aee7b9c5d594a22060d315f62ba92d732}\label{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content_aee7b9c5d594a22060d315f62ba92d732}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.ComparableContent$<$ ContentType $>$}!isEqual@{isEqual}}
+\index{isEqual@{isEqual}!KAGO\_framework.model.abitur.datenstrukturen.ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.ComparableContent$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{isEqual()}{isEqual()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Comparable\+Content}}$<$ Content\+Type $>$.is\+Equal (\begin{DoxyParamCaption}\item[{Content\+Type}]{p\+Content }\end{DoxyParamCaption})}
+
+Wenn festgestellt wird, dass das Objekt, von dem die Methode aufgerufen wird, bzgl. der gewuenschten Ordnungsrelation gleich gross wie das Objekt p\+Content ist, wird true geliefert. Sonst wird false geliefert.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Content} & das mit dem aufrufenden Objekt zu vergleichende Objekt vom Typ Content\+Type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, wenn das aufrufende Objekt gleich gross ist wie das Objekt p\+Content, sonst false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content_aa79970cd9a782f7dbdaf307f71fe05f1}\label{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content_aa79970cd9a782f7dbdaf307f71fe05f1}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.ComparableContent$<$ ContentType $>$}!isGreater@{isGreater}}
+\index{isGreater@{isGreater}!KAGO\_framework.model.abitur.datenstrukturen.ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.ComparableContent$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{isGreater()}{isGreater()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Comparable\+Content}}$<$ Content\+Type $>$.is\+Greater (\begin{DoxyParamCaption}\item[{Content\+Type}]{p\+Content }\end{DoxyParamCaption})}
+
+Wenn festgestellt wird, dass das Objekt, von dem die Methode aufgerufen wird, bzgl. der gewuenschten Ordnungsrelation groesser als das Objekt p\+Content ist, wird true geliefert. Sonst wird false geliefert.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Content} & das mit dem aufrufenden Objekt zu vergleichende Objekt vom Typ Content\+Type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, wenn das aufrufende Objekt groesser ist als das Objekt p\+Content, sonst false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content_a090aa2b72e106a2bc007c820b34e1ccc}\label{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content_a090aa2b72e106a2bc007c820b34e1ccc}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.ComparableContent$<$ ContentType $>$}!isLess@{isLess}}
+\index{isLess@{isLess}!KAGO\_framework.model.abitur.datenstrukturen.ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.ComparableContent$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{isLess()}{isLess()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Comparable\+Content}}$<$ Content\+Type $>$.is\+Less (\begin{DoxyParamCaption}\item[{Content\+Type}]{p\+Content }\end{DoxyParamCaption})}
+
+Wenn festgestellt wird, dass das Objekt, von dem die Methode aufgerufen wird, bzgl. der gewuenschten Ordnungsrelation kleiner als das Objekt p\+Content ist, wird true geliefert. Sonst wird false geliefert.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Content} & das mit dem aufrufenden Objekt zu vergleichende Objekt vom Typ Content\+Type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, wenn das aufrufende Objekt kleiner ist als das Objekt p\+Content, sonst false ~\newline
+ 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Eriks\+Bilderund\+Dateien/\+Git\+Hub/\+Git\+Hub/\+Scan\+Parse\+Project-\/\+Gradle/src/main/java/\+K\+A\+G\+O\+\_\+framework/model/abitur/datenstrukturen/\mbox{\hyperlink{_comparable_content_8java}{Comparable\+Content.\+java}}\end{DoxyCompactItemize}

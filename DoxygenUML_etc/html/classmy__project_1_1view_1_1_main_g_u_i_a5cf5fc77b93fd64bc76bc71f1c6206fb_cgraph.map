@@ -1,0 +1,26 @@
+<map id="my_project.view.MainGUI.MainGUI" name="my_project.view.MainGUI.MainGUI">
+<area shape="rect" id="node1" title=" " alt="" coords="5,465,177,506"/>
+<area shape="rect" id="node2" href="$classmy__project_1_1control_1_1_program_controller.html#abf32d023dfbf3352155c39a8678f3422" title=" " alt="" coords="225,136,408,177"/>
+<area shape="rect" id="node11" href="$classmy__project_1_1control_1_1_program_controller.html#aff693499cc94808afd407b34a3155c70" title=" " alt="" coords="225,562,408,604"/>
+<area shape="rect" id="node15" href="$classmy__project_1_1control_1_1_program_controller.html#a4d7407d68f8508d79a326c3a80511415" title=" " alt="" coords="225,628,408,669"/>
+<area shape="rect" id="node16" href="$classmy__project_1_1control_1_1_program_controller.html#ab90be7745a47288da60ba85416211a34" title=" " alt="" coords="225,398,408,440"/>
+<area shape="rect" id="node3" href="$classmy__project_1_1model_1_1_bungalow_kontextfrei_parser.html#a8af8c9deae6df9c082724fe6a419fce7" title=" " alt="" coords="481,165,667,206"/>
+<area shape="rect" id="node6" href="$classmy__project_1_1model_1_1_bungalow_parser.html#aea44fb32f8413c4e1062baaa4a0dbb23" title=" " alt="" coords="481,48,667,89"/>
+<area shape="rect" id="node9" href="$classmy__project_1_1model_1_1_knebi_parser.html#a45fbab8eee3f112bb8ecbed84fbd08c5" title=" " alt="" coords="456,114,692,140"/>
+<area shape="rect" id="node4" href="$classmy__project_1_1model_1_1_bungalow_kontextfrei_parser.html#ab6ad261b9c8fd2fb07cb485f6c871f40" title=" " alt="" coords="780,172,999,213"/>
+<area shape="rect" id="node5" href="$classmy__project_1_1model_1_1_bungalow_scanner.html#a89178c5e92a212e1d5ae490b25a87e07" title=" " alt="" coords="1087,230,1272,272"/>
+<area shape="rect" id="node7" href="$classmy__project_1_1model_1_1_scanner.html#ace4bd98ba30f5e6c164f766964ef9963" title=" " alt="" coords="776,55,1003,82"/>
+<area shape="rect" id="node8" href="$classmy__project_1_1model_1_1_scanner.html#aa4491c233e09f88c9a1c9d6b7ff4b05f" title=" " alt="" coords="786,106,993,148"/>
+<area shape="rect" id="node10" href="$classmy__project_1_1model_1_1_knebi_scanner.html#aa58c1f9644220b77231d09b490291fed" title=" " alt="" coords="768,238,1011,264"/>
+<area shape="rect" id="node12" href="$class_k_a_g_o__framework_1_1control_1_1_view_controller.html#ac27336de2e7cd23b10ee1e4ab7d4b6c3" title=" " alt="" coords="473,660,675,701"/>
+<area shape="rect" id="node13" href="$class_k_a_g_o__framework_1_1control_1_1_sound_controller.html#a9d6b80dd3fbab234f9095ea9f0d4dcc3" title=" " alt="" coords="469,594,679,636"/>
+<area shape="rect" id="node14" href="$class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_queue.html#a909d518a3303f5aab8311bb5fd9b4099" title=" " alt="" coords="740,594,1039,636"/>
+<area shape="rect" id="node17" href="$classmy__project_1_1model_1_1_bungalow_kontextfrei_parser.html#a39db173a901bb51e983b683427539a4d" title=" " alt="" coords="459,529,689,570"/>
+<area shape="rect" id="node19" href="$classmy__project_1_1model_1_1_bungalow_parser.html#ac6c2d54d38b126726799012d3e4403f9" title=" " alt="" coords="481,464,667,505"/>
+<area shape="rect" id="node20" href="$classmy__project_1_1model_1_1_knebi_parser.html#a02a2d62dec163e8914546ff6996f5a47" title=" " alt="" coords="463,398,685,440"/>
+<area shape="rect" id="node22" href="$classmy__project_1_1model_1_1_bungalow_kontextfrei_parser.html#afb196ca225ed51ced51d8cb360da1d46" title=" " alt="" coords="775,289,1004,330"/>
+<area shape="rect" id="node23" href="$classmy__project_1_1model_1_1_bungalow_parser.html#aef38e734931673dc98221c60270d1e84" title=" " alt="" coords="797,354,982,396"/>
+<area shape="rect" id="node24" href="$classmy__project_1_1model_1_1_knebi_parser.html#ab7edc196ce3e982e6f0c0a008cfb9e4c" title=" " alt="" coords="463,230,685,272"/>
+<area shape="rect" id="node18" href="$classmy__project_1_1model_1_1_bungalow_scanner.html#a926129f717546cf90df7467e22debb55" title=" " alt="" coords="797,506,982,548"/>
+<area shape="rect" id="node21" href="$classmy__project_1_1model_1_1_knebi_scanner.html#a6a8bd402a60dee7d21ca31c8dddd1245" title=" " alt="" coords="773,420,1005,461"/>
+</map>

@@ -1,0 +1,197 @@
+\hypertarget{class_k_a_g_o__framework_1_1control_1_1_sound_controller}{}\doxysection{K\+A\+G\+O\+\_\+framework.\+control.\+Sound\+Controller Class Reference}
+\label{class_k_a_g_o__framework_1_1control_1_1_sound_controller}\index{KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a145795640763c5510da77b76253029ca}{Sound\+Controller}} ()
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a3da98e22ee8a34778a5bdd6b18f1787f}{update}} (double dt)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_sound_controller_ad007ca574ee1eec52971dbb858249ed7}{load\+Sound}} (String filename, String name, boolean play\+Looped)
+\item 
+boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a031fdcc23fe1059a501123583d7a68dc}{get\+Initialized}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a9d6b80dd3fbab234f9095ea9f0d4dcc3}{play\+Sound}} (String name)
+\item 
+static void \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_sound_controller_ae54e40fed953eeed867c5fbceb9cfc05}{stop\+Sound}} (String name)
+\item 
+static boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a39faeb6b4ba61a7539bfa182b4d98153}{is\+Playing}} (String name)
+\item 
+static void \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a9c3f57241363bf2e89663ef6f38d4e11}{set\+Volume}} (String sound\+Name, double volume)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Achtung\+: Die Nutzung dieser Klasse setzt voraus, dass im Projekt (S\+T\+R\+G+\+A\+L\+T+\+U\+M\+S\+C\+H\+A\+L\+T+S) unter Libraries die Java\+F\+X-\/\+Bibliothek registriert ist. Diese befindet sich im Projektverzeichnis im Ordner \char`\"{}javafx\+\_\+lib\char`\"{}.
+
+Diese Klasse dient zum Abspielen von Musik und Effekten aus dem Ordner assets/... Je nach PC benötigt die J\+RE etwas Zeit um den Java-\/\+F\+X-\/\+Teil zu initialisieren. Daher kann es dazu kommen, dass Sounds nicht gespielt werden, wenn sie sofort nach Programmstart geladen U\+ND gespielt werden sollen. Eine Sekunde Wartezeit reicht normalerweise dicke. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a145795640763c5510da77b76253029ca}\label{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a145795640763c5510da77b76253029ca}} 
+\index{KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}!SoundController@{SoundController}}
+\index{SoundController@{SoundController}!KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}}
+\doxysubsubsection{\texorpdfstring{SoundController()}{SoundController()}}
+{\footnotesize\ttfamily K\+A\+G\+O\+\_\+framework.\+control.\+Sound\+Controller.\+Sound\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Erzeugt ein Objekt der Klasse \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_sound_controller}{Sound\+Controller}}. Es ist nur eines dieser Objekte nötig, um alle Sounds zu verwalten. Der \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_sound_controller}{Sound\+Controller}} sollte so früh wie möglich initialisiert werden. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a031fdcc23fe1059a501123583d7a68dc}\label{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a031fdcc23fe1059a501123583d7a68dc}} 
+\index{KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}!getInitialized@{getInitialized}}
+\index{getInitialized@{getInitialized}!KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}}
+\doxysubsubsection{\texorpdfstring{getInitialized()}{getInitialized()}}
+{\footnotesize\ttfamily boolean K\+A\+G\+O\+\_\+framework.\+control.\+Sound\+Controller.\+get\+Initialized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Liefert, ob der Controller einsatzbereit ist \begin{DoxyReturn}{Returns}
+true, falls einsatzbereit, sonst false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a39faeb6b4ba61a7539bfa182b4d98153}\label{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a39faeb6b4ba61a7539bfa182b4d98153}} 
+\index{KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}!isPlaying@{isPlaying}}
+\index{isPlaying@{isPlaying}!KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}}
+\doxysubsubsection{\texorpdfstring{isPlaying()}{isPlaying()}}
+{\footnotesize\ttfamily static boolean K\+A\+G\+O\+\_\+framework.\+control.\+Sound\+Controller.\+is\+Playing (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Überprüft, ob der spezifizierte Sound gerade abgespielt wird. 
+\begin{DoxyParams}{Parameters}
+{\em name} & der eindeutige Name des Sounds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, falls der Sound gerade abgespielt wird, sonst false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a39faeb6b4ba61a7539bfa182b4d98153_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a39faeb6b4ba61a7539bfa182b4d98153_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_sound_controller_ad007ca574ee1eec52971dbb858249ed7}\label{class_k_a_g_o__framework_1_1control_1_1_sound_controller_ad007ca574ee1eec52971dbb858249ed7}} 
+\index{KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}!loadSound@{loadSound}}
+\index{loadSound@{loadSound}!KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}}
+\doxysubsubsection{\texorpdfstring{loadSound()}{loadSound()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+control.\+Sound\+Controller.\+load\+Sound (\begin{DoxyParamCaption}\item[{String}]{filename,  }\item[{String}]{name,  }\item[{boolean}]{play\+Looped }\end{DoxyParamCaption})}
+
+Lädt einen neuen Sound! 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Der Dateiname im Verzeichnis assets. Zum Beispiel \char`\"{}/sounds/wuff.\+mp3\char`\"{} Möglich sind die meisten Sound-\/\+Dateien. \\
+\hline
+{\em name} & Der Name unter dem der Sound im Programm verwendet werden soll. Er muss E\+I\+N\+D\+E\+U\+T\+IG sein. \\
+\hline
+{\em play\+Looped} & Ob der Sound wiederholt werden soll, wenn er fertig gespielt ist. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1control_1_1_sound_controller_ad007ca574ee1eec52971dbb858249ed7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a9d6b80dd3fbab234f9095ea9f0d4dcc3}\label{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a9d6b80dd3fbab234f9095ea9f0d4dcc3}} 
+\index{KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}!playSound@{playSound}}
+\index{playSound@{playSound}!KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}}
+{\footnotesize\ttfamily static void K\+A\+G\+O\+\_\+framework.\+control.\+Sound\+Controller.\+play\+Sound (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Spielt einen Sound (ggf. wiederholt) ab. Wenn der Sound bereits läuft, wird er zuvor gestoppt. W\+I\+C\+H\+T\+I\+G\+ER H\+I\+N\+W\+E\+IS\+: eine mp3-\/\+Datei kann evtl. nicht wiedergegeben werden, wenn spezielle Album-\/\+Art oder ähnliches integriert ist -\/ bei Problemen erst andere mp3s testen 
+\begin{DoxyParams}{Parameters}
+{\em name} & Der beim Anlegen des Sounds vergebene, eindeutige Name. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a9d6b80dd3fbab234f9095ea9f0d4dcc3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a9d6b80dd3fbab234f9095ea9f0d4dcc3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a9c3f57241363bf2e89663ef6f38d4e11}\label{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a9c3f57241363bf2e89663ef6f38d4e11}} 
+\index{KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}}
+{\footnotesize\ttfamily static void K\+A\+G\+O\+\_\+framework.\+control.\+Sound\+Controller.\+set\+Volume (\begin{DoxyParamCaption}\item[{String}]{sound\+Name,  }\item[{double}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Ändert die Lautstärke eines Sounds. Funktioniert erst, wenn das Programm schon etwas läuft. 
+\begin{DoxyParams}{Parameters}
+{\em sound\+Name} & der gesuchte Sound (muss geladen sein) \\
+\hline
+{\em volume} & die neue Lautstärke (zwischen 0 und 1) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a9c3f57241363bf2e89663ef6f38d4e11_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_sound_controller_ae54e40fed953eeed867c5fbceb9cfc05}\label{class_k_a_g_o__framework_1_1control_1_1_sound_controller_ae54e40fed953eeed867c5fbceb9cfc05}} 
+\index{KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}!stopSound@{stopSound}}
+\index{stopSound@{stopSound}!KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}}
+\doxysubsubsection{\texorpdfstring{stopSound()}{stopSound()}}
+{\footnotesize\ttfamily static void K\+A\+G\+O\+\_\+framework.\+control.\+Sound\+Controller.\+stop\+Sound (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Hält den Sound an und setzt ihn auf den Anfang zurück. 
+\begin{DoxyParams}{Parameters}
+{\em name} & Der beim Anlegen des Sounds vergebene, eindeutige Name. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1control_1_1_sound_controller_ae54e40fed953eeed867c5fbceb9cfc05_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a3da98e22ee8a34778a5bdd6b18f1787f}\label{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a3da98e22ee8a34778a5bdd6b18f1787f}} 
+\index{KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}!update@{update}}
+\index{update@{update}!KAGO\_framework.control.SoundController@{KAGO\_framework.control.SoundController}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+control.\+Sound\+Controller.\+update (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})}
+
+Sorgt für ein zeitverzögertes Laden der Sounds, damit berücksichtigt wird, dass der Java\+FX ggf. nicht sofort verfügbar ist. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a3da98e22ee8a34778a5bdd6b18f1787f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1control_1_1_sound_controller_a3da98e22ee8a34778a5bdd6b18f1787f_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Eriks\+Bilderund\+Dateien/\+Git\+Hub/\+Git\+Hub/\+Scan\+Parse\+Project-\/\+Gradle/src/main/java/\+K\+A\+G\+O\+\_\+framework/control/\mbox{\hyperlink{_sound_controller_8java}{Sound\+Controller.\+java}}\end{DoxyCompactItemize}

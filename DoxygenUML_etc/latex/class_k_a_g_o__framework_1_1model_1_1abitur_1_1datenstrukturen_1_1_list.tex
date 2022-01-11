@@ -1,0 +1,254 @@
+\hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{}\doxysection{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+List$<$ Content\+Type $>$ Class Template Reference}
+\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}\index{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}}
+
+
+Collaboration diagram for K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+List$<$ Content\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a0bcf7470bd2d43f94566710f8173eec8}{List}} ()
+\item 
+boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a5d1abbb8df416ef64993d320f6c5c74c}{is\+Empty}} ()
+\item 
+boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_af91ac264ed1ed321389ed0efda86a9e0}{has\+Access}} ()
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a588ebb966d2fb3bddf6a447d0f30dc82}{next}} ()
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_ae91384260ee5c933088c520804d8ee9f}{to\+First}} ()
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a03bbe7410fe2193b6e5af49c23ae5df5}{to\+Last}} ()
+\item 
+Content\+Type \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a957f11b366c482214f08e53982efc416}{get\+Content}} ()
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a4c49307c742464ed96a3200c288d77d4}{set\+Content}} (Content\+Type p\+Content)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_ad4cba0ea6145c49ecfa6a58c0cc0d4cb}{insert}} (Content\+Type p\+Content)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a968ff1443a0f281cb2ade7efd18b4fb1}{append}} (Content\+Type p\+Content)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_ad130dc9f8ffbfbdb2ebb5f5d868113f4}{concat}} (\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{List}}$<$ Content\+Type $>$ p\+List)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_ab862c4873a9ef44e789afa9492e238e6}{remove}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Materialien zu den zentralen N\+R\+W-\/\+Abiturpruefungen im Fach Informatik ab 2018 
+
+Generische Klasse List$<$\+Content\+Type$>$ 
+
+Objekt der generischen Klasse \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{List}} verwalten beliebig viele linear angeordnete Objekte vom Typ Content\+Type. Auf hoechstens ein Listenobjekt, aktuelles\+Objekt genannt, kann jeweils zugegriffen werden.~\newline
+ Wenn eine Liste leer ist, vollstaendig durchlaufen wurde oder das aktuelle Objekt am Ende der Liste geloescht wurde, gibt es kein aktuelles Objekt.~\newline
+ Das erste oder das letzte Objekt einer Liste koennen durch einen Auftrag zum aktuellen Objekt gemacht werden. Ausserdem kann das dem aktuellen Objekt folgende Listenobjekt zum neuen aktuellen Objekt werden. ~\newline
+ Das aktuelle Objekt kann gelesen, veraendert oder geloescht werden. Ausserdem kann vor dem aktuellen Objekt ein Listenobjekt eingefuegt werden. 
+
+\begin{DoxyAuthor}{Author}
+Qualitaets-\/ und Unterstuetzungs\+Agentur -\/ Landesinstitut fuer Schule 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+Generisch\+\_\+06 2015-\/10-\/25 
+\end{DoxyVersion}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a0bcf7470bd2d43f94566710f8173eec8}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a0bcf7470bd2d43f94566710f8173eec8}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}!List@{List}}
+\index{List@{List}!KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{List()}{List()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+List}}$<$ Content\+Type $>$.\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Eine leere Liste wird erzeugt. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a968ff1443a0f281cb2ade7efd18b4fb1}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a968ff1443a0f281cb2ade7efd18b4fb1}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}!append@{append}}
+\index{append@{append}!KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+List}}$<$ Content\+Type $>$.append (\begin{DoxyParamCaption}\item[{Content\+Type}]{p\+Content }\end{DoxyParamCaption})}
+
+Falls p\+Content gleich null ist, geschieht nichts.~\newline
+ Ansonsten wird ein neues Objekt p\+Content am Ende der Liste eingefuegt. Das aktuelle Objekt bleibt unveraendert. ~\newline
+ Wenn die Liste leer ist, wird das Objekt p\+Content in die Liste eingefuegt und es gibt weiterhin kein aktuelles Objekt (\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_af91ac264ed1ed321389ed0efda86a9e0}{has\+Access()}} == false).
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Content} & das anzuhaengende Objekt vom Typ Content\+Type \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a968ff1443a0f281cb2ade7efd18b4fb1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_ad130dc9f8ffbfbdb2ebb5f5d868113f4}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_ad130dc9f8ffbfbdb2ebb5f5d868113f4}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}!concat@{concat}}
+\index{concat@{concat}!KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{concat()}{concat()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+List}}$<$ Content\+Type $>$.concat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{List}}$<$ Content\+Type $>$}]{p\+List }\end{DoxyParamCaption})}
+
+Falls es sich bei der Liste und p\+List um dasselbe Objekt handelt, p\+List null oder eine leere Liste ist, geschieht nichts.~\newline
+ Ansonsten wird die Liste p\+List an die aktuelle Liste angehaengt. Anschliessend wird p\+List eine leere Liste. Das aktuelle Objekt bleibt unveraendert. Insbesondere bleibt has\+Access identisch.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+List} & die am Ende anzuhaengende Liste vom Typ List$<$\+Content\+Type$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a957f11b366c482214f08e53982efc416}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a957f11b366c482214f08e53982efc416}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}!getContent@{getContent}}
+\index{getContent@{getContent}!KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{getContent()}{getContent()}}
+{\footnotesize\ttfamily Content\+Type \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+List}}$<$ Content\+Type $>$.get\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Falls es ein aktuelles Objekt gibt (\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_af91ac264ed1ed321389ed0efda86a9e0}{has\+Access()}} == true), wird das aktuelle Objekt zurueckgegeben, andernfalls (\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_af91ac264ed1ed321389ed0efda86a9e0}{has\+Access()}} == false) gibt die Anfrage den Wert null zurueck.
+
+\begin{DoxyReturn}{Returns}
+das aktuelle Objekt (vom Typ Content\+Type) oder null, wenn es kein aktuelles Objekt gibt 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a957f11b366c482214f08e53982efc416_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_af91ac264ed1ed321389ed0efda86a9e0}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_af91ac264ed1ed321389ed0efda86a9e0}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}!hasAccess@{hasAccess}}
+\index{hasAccess@{hasAccess}!KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{hasAccess()}{hasAccess()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+List}}$<$ Content\+Type $>$.has\+Access (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Die Anfrage liefert den Wert true, wenn es ein aktuelles Objekt gibt, sonst liefert sie den Wert false.
+
+\begin{DoxyReturn}{Returns}
+true, falls Zugriff moeglich, sonst false 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_af91ac264ed1ed321389ed0efda86a9e0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_ad4cba0ea6145c49ecfa6a58c0cc0d4cb}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_ad4cba0ea6145c49ecfa6a58c0cc0d4cb}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}!insert@{insert}}
+\index{insert@{insert}!KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+List}}$<$ Content\+Type $>$.insert (\begin{DoxyParamCaption}\item[{Content\+Type}]{p\+Content }\end{DoxyParamCaption})}
+
+Falls es ein aktuelles Objekt gibt (\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_af91ac264ed1ed321389ed0efda86a9e0}{has\+Access()}} == true), wird ein neues Objekt vor dem aktuellen Objekt in die Liste eingefuegt. Das aktuelle Objekt bleibt unveraendert. ~\newline
+ Wenn die Liste leer ist, wird p\+Content in die Liste eingefuegt und es gibt weiterhin kein aktuelles Objekt (\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_af91ac264ed1ed321389ed0efda86a9e0}{has\+Access()}} == false). ~\newline
+ Falls es kein aktuelles Objekt gibt (\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_af91ac264ed1ed321389ed0efda86a9e0}{has\+Access()}} == false) und die Liste nicht leer ist oder p\+Content gleich null ist, geschieht nichts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Content} & das einzufuegende Objekt vom Typ Content\+Type \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_ad4cba0ea6145c49ecfa6a58c0cc0d4cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a5d1abbb8df416ef64993d320f6c5c74c}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a5d1abbb8df416ef64993d320f6c5c74c}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+List}}$<$ Content\+Type $>$.is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Die Anfrage liefert den Wert true, wenn die Liste keine Objekte enthaelt, sonst liefert sie den Wert false.
+
+\begin{DoxyReturn}{Returns}
+true, wenn die Liste leer ist, sonst false 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a5d1abbb8df416ef64993d320f6c5c74c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a588ebb966d2fb3bddf6a447d0f30dc82}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a588ebb966d2fb3bddf6a447d0f30dc82}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}!next@{next}}
+\index{next@{next}!KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+List}}$<$ Content\+Type $>$.next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Falls die Liste nicht leer ist, es ein aktuelles Objekt gibt und dieses nicht das letzte Objekt der Liste ist, wird das dem aktuellen Objekt in der Liste folgende Objekt zum aktuellen Objekt, andernfalls gibt es nach Ausfuehrung des Auftrags kein aktuelles Objekt, d.\+h. \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_af91ac264ed1ed321389ed0efda86a9e0}{has\+Access()}} liefert den Wert false. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a588ebb966d2fb3bddf6a447d0f30dc82_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_ab862c4873a9ef44e789afa9492e238e6}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_ab862c4873a9ef44e789afa9492e238e6}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}!remove@{remove}}
+\index{remove@{remove}!KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+List}}$<$ Content\+Type $>$.remove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Wenn die Liste leer ist oder es kein aktuelles Objekt gibt (\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_af91ac264ed1ed321389ed0efda86a9e0}{has\+Access()}} == false), geschieht nichts.~\newline
+ Falls es ein aktuelles Objekt gibt (\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_af91ac264ed1ed321389ed0efda86a9e0}{has\+Access()}} == true), wird das aktuelle Objekt geloescht und das Objekt hinter dem geloeschten Objekt wird zum aktuellen Objekt. ~\newline
+ Wird das Objekt, das am Ende der Liste steht, geloescht, gibt es kein aktuelles Objekt mehr. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_ab862c4873a9ef44e789afa9492e238e6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a4c49307c742464ed96a3200c288d77d4}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a4c49307c742464ed96a3200c288d77d4}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}!setContent@{setContent}}
+\index{setContent@{setContent}!KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{setContent()}{setContent()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+List}}$<$ Content\+Type $>$.set\+Content (\begin{DoxyParamCaption}\item[{Content\+Type}]{p\+Content }\end{DoxyParamCaption})}
+
+Falls es ein aktuelles Objekt gibt (\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_af91ac264ed1ed321389ed0efda86a9e0}{has\+Access()}} == true) und p\+Content ungleich null ist, wird das aktuelle Objekt durch p\+Content ersetzt. Sonst geschieht nichts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Content} & das zu schreibende Objekt vom Typ Content\+Type \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_ae91384260ee5c933088c520804d8ee9f}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_ae91384260ee5c933088c520804d8ee9f}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}!toFirst@{toFirst}}
+\index{toFirst@{toFirst}!KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{toFirst()}{toFirst()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+List}}$<$ Content\+Type $>$.to\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Falls die Liste nicht leer ist, wird das erste Objekt der Liste aktuelles Objekt. Ist die Liste leer, geschieht nichts. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_ae91384260ee5c933088c520804d8ee9f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a03bbe7410fe2193b6e5af49c23ae5df5}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list_a03bbe7410fe2193b6e5af49c23ae5df5}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}!toLast@{toLast}}
+\index{toLast@{toLast}!KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.List$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{toLast()}{toLast()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_list}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+List}}$<$ Content\+Type $>$.to\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Falls die Liste nicht leer ist, wird das letzte Objekt der Liste aktuelles Objekt. Ist die Liste leer, geschieht nichts. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Eriks\+Bilderund\+Dateien/\+Git\+Hub/\+Git\+Hub/\+Scan\+Parse\+Project-\/\+Gradle/src/main/java/\+K\+A\+G\+O\+\_\+framework/model/abitur/datenstrukturen/\mbox{\hyperlink{_list_8java}{List.\+java}}\end{DoxyCompactItemize}

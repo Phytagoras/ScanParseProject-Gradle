@@ -1,0 +1,189 @@
+\hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{}\doxysection{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Binary\+Search\+Tree$<$ Content\+Type extends Comparable\+Content$<$ Content\+Type $>$ Class Template Reference}
+\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}\index{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_ac19c411a1ad8e912adf717422dc1c6cb}{Binary\+Search\+Tree}} ()
+\item 
+boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_ae60f053e3c25d505a4c9de34f7c571a6}{is\+Empty}} ()
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_acca839ffd0bbfc0f362170538b4ae41c}{insert}} (Content\+Type p\+Content)
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{Binary\+Search\+Tree}}$<$ Content\+Type $>$ \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_a7af7eb89c3bb60f871704601d1006164}{get\+Left\+Tree}} ()
+\item 
+Content\+Type \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_aaa115a603181c9a68fd832d70c9b2e88}{get\+Content}} ()
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{Binary\+Search\+Tree}}$<$ Content\+Type $>$ \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_a58fd1ae7a62287ba38575dbbbd9ea4f9}{get\+Right\+Tree}} ()
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_a1b28797d7e3bbd7e2c3fc6b0a1e930fc}{remove}} (Content\+Type p\+Content)
+\item 
+Content\+Type \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_a20245f9e0243b1eac3eeab8df560cfe1}{search}} (Content\+Type p\+Content)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Materialien zu den zentralen N\+R\+W-\/\+Abiturpruefungen im Fach Informatik ab 2018 
+
+Generische Klasse Binary\+Search\+Tree$<$\+Content\+Type$>$ 
+
+Mithilfe der generischen Klasse \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{Binary\+Search\+Tree}} koennen beliebig viele Objekte in einem Binaerbaum (binaerer Suchbaum) entsprechend einer Ordnungsrelation verwaltet werden. ~\newline
+ Ein Objekt der Klasse stellt entweder einen leeren binaeren Suchbaum dar oder verwaltet ein Inhaltsobjekt sowie einen linken und einen rechten Teilbaum, die ebenfalls Objekte der Klasse \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{Binary\+Search\+Tree}} sind.~\newline
+ Die Klasse der Objekte, die in dem Suchbaum verwaltet werden sollen, muss das generische Interface \mbox{\hyperlink{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content}{Comparable\+Content}} implementieren. Dabei muss durch Ueberschreiben der drei Vergleichsmethoden is\+Less, is\+Equal, is\+Greater (s. Dokumentation des Interfaces) eine eindeutige Ordnungsrelation festgelegt sein. ~\newline
+ Alle Objekte im linken Teilbaum sind kleiner als das Inhaltsobjekt des binaeren Suchbaums. Alle Objekte im rechten Teilbaum sind groesser als das Inhaltsobjekt des binaeren Suchbaums. Diese Bedingung gilt (rekursiv) auch in beiden Teilbaeumen. ~\newline
+ Hinweis\+: In dieser Version wird die Klasse \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_tree}{Binary\+Tree}} nicht benutzt. 
+
+\begin{DoxyAuthor}{Author}
+Qualitaets-\/ und Unterstuetzungs\+Agentur -\/ Landesinstitut fuer Schule 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+Generisch\+\_\+03 2017-\/11-\/28 
+\end{DoxyVersion}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_ac19c411a1ad8e912adf717422dc1c6cb}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_ac19c411a1ad8e912adf717422dc1c6cb}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}!BinarySearchTree@{BinarySearchTree}}
+\index{BinarySearchTree@{BinarySearchTree}!KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{BinarySearchTree()}{BinarySearchTree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Binary\+Search\+Tree}}$<$ Content\+Type extends \mbox{\hyperlink{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content}{Comparable\+Content}}$<$ Content\+Type $>$.\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{Binary\+Search\+Tree}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Der Konstruktor erzeugt einen leeren Suchbaum. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_aaa115a603181c9a68fd832d70c9b2e88}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_aaa115a603181c9a68fd832d70c9b2e88}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}!getContent@{getContent}}
+\index{getContent@{getContent}!KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{getContent()}{getContent()}}
+{\footnotesize\ttfamily Content\+Type \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Binary\+Search\+Tree}}$<$ Content\+Type extends \mbox{\hyperlink{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content}{Comparable\+Content}}$<$ Content\+Type $>$.get\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Diese Anfrage liefert das Inhaltsobjekt des Suchbaumes. Wenn der Suchbaum leer ist, wird null zurueckgegeben.
+
+\begin{DoxyReturn}{Returns}
+das Inhaltsobjekt vom Typ Content\+Type bzw. null, wenn der aktuelle Suchbaum leer ist 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_aaa115a603181c9a68fd832d70c9b2e88_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_a7af7eb89c3bb60f871704601d1006164}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_a7af7eb89c3bb60f871704601d1006164}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}!getLeftTree@{getLeftTree}}
+\index{getLeftTree@{getLeftTree}!KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{getLeftTree()}{getLeftTree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{Binary\+Search\+Tree}}$<$Content\+Type$>$ \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Binary\+Search\+Tree}}$<$ Content\+Type extends \mbox{\hyperlink{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content}{Comparable\+Content}}$<$ Content\+Type $>$.get\+Left\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Diese Anfrage liefert den linken Teilbaum des binaeren Suchbaumes. ~\newline
+ Wenn er leer ist, wird null zurueckgegeben.
+
+\begin{DoxyReturn}{Returns}
+den linken Teilbaum (Objekt vom Typ Binary\+Search\+Tree$<$\+Content\+Type$>$) bzw. null, wenn der Suchbaum leer ist 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_a7af7eb89c3bb60f871704601d1006164_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_a58fd1ae7a62287ba38575dbbbd9ea4f9}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_a58fd1ae7a62287ba38575dbbbd9ea4f9}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}!getRightTree@{getRightTree}}
+\index{getRightTree@{getRightTree}!KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{getRightTree()}{getRightTree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{Binary\+Search\+Tree}}$<$Content\+Type$>$ \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Binary\+Search\+Tree}}$<$ Content\+Type extends \mbox{\hyperlink{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content}{Comparable\+Content}}$<$ Content\+Type $>$.get\+Right\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Diese Anfrage liefert den rechten Teilbaum des binaeren Suchbaumes. ~\newline
+ Wenn er leer ist, wird null zurueckgegeben.
+
+\begin{DoxyReturn}{Returns}
+den rechten Teilbaum (Objekt vom Typ Binary\+Search\+Tree$<$\+Content\+Type$>$) bzw. null, wenn der aktuelle Suchbaum leer ist 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_a58fd1ae7a62287ba38575dbbbd9ea4f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_acca839ffd0bbfc0f362170538b4ae41c}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_acca839ffd0bbfc0f362170538b4ae41c}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}!insert@{insert}}
+\index{insert@{insert}!KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Binary\+Search\+Tree}}$<$ Content\+Type extends \mbox{\hyperlink{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content}{Comparable\+Content}}$<$ Content\+Type $>$.insert (\begin{DoxyParamCaption}\item[{Content\+Type}]{p\+Content }\end{DoxyParamCaption})}
+
+Falls der Parameter null ist, geschieht nichts.~\newline
+ Falls ein bezueglich der verwendeten Vergleichsmethode is\+Equal mit p\+Content uebereinstimmendes Objekt im geordneten binaeren Suchbau enthalten ist, passiert nichts. ~\newline
+ Achtung\+: hier wird davon ausgegangen, dass is\+Equal genau dann true liefert, wenn is\+Less und is\+Greater false liefern. ~\newline
+ Andernfalls (is\+Less oder is\+Greater) wird das Objekt p\+Content entsprechend der vorgegebenen Ordnungsrelation in den \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{Binary\+Search\+Tree}} eingeordnet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Content} & einzufuegendes Objekt vom Typ Content\+Type \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_ae60f053e3c25d505a4c9de34f7c571a6}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_ae60f053e3c25d505a4c9de34f7c571a6}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Binary\+Search\+Tree}}$<$ Content\+Type extends \mbox{\hyperlink{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content}{Comparable\+Content}}$<$ Content\+Type $>$.is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Diese Anfrage liefert den Wahrheitswert true, wenn der Suchbaum leer ist, sonst liefert sie den Wert false.
+
+\begin{DoxyReturn}{Returns}
+true, wenn der binaere Suchbaum leer ist, sonst false 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_ae60f053e3c25d505a4c9de34f7c571a6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_a1b28797d7e3bbd7e2c3fc6b0a1e930fc}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_a1b28797d7e3bbd7e2c3fc6b0a1e930fc}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}!remove@{remove}}
+\index{remove@{remove}!KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Binary\+Search\+Tree}}$<$ Content\+Type extends \mbox{\hyperlink{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content}{Comparable\+Content}}$<$ Content\+Type $>$.remove (\begin{DoxyParamCaption}\item[{Content\+Type}]{p\+Content }\end{DoxyParamCaption})}
+
+Falls ein bezueglich der verwendeten Vergleichsmethode mit p\+Content uebereinstimmendes Objekt im binaeren Suchbaum enthalten ist, wird dieses entfernt. Falls der Parameter null ist, aendert sich nichts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Content} & zu entfernendes Objekt vom Typ Content\+Type \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_a1b28797d7e3bbd7e2c3fc6b0a1e930fc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_a20245f9e0243b1eac3eeab8df560cfe1}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree_a20245f9e0243b1eac3eeab8df560cfe1}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}!search@{search}}
+\index{search@{search}!KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.BinarySearchTree$<$ ContentType extends ComparableContent$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily Content\+Type \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_binary_search_tree}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Binary\+Search\+Tree}}$<$ Content\+Type extends \mbox{\hyperlink{interface_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_comparable_content}{Comparable\+Content}}$<$ Content\+Type $>$.search (\begin{DoxyParamCaption}\item[{Content\+Type}]{p\+Content }\end{DoxyParamCaption})}
+
+Falls ein bezueglich der verwendeten Vergleichsmethode is\+Equal mit p\+Content uebereinstimmendes Objekt im binaeren Suchbaum enthalten ist, liefert die Anfrage dieses, ansonsten wird null zurueckgegeben. ~\newline
+ Falls der Parameter null ist, wird null zurueckgegeben.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Content} & zu suchendes Objekt vom Typ Content\+Type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+das gefundene Objekt vom Typ Content\+Type, bei erfolgloser Suche null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Eriks\+Bilderund\+Dateien/\+Git\+Hub/\+Git\+Hub/\+Scan\+Parse\+Project-\/\+Gradle/src/main/java/\+K\+A\+G\+O\+\_\+framework/model/abitur/datenstrukturen/\mbox{\hyperlink{_binary_search_tree_8java}{Binary\+Search\+Tree.\+java}}\end{DoxyCompactItemize}

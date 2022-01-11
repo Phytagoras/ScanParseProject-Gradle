@@ -1,0 +1,14 @@
+<map id="KAGO_framework.model.abitur.datenstrukturen.Queue.isEmpty" name="KAGO_framework.model.abitur.datenstrukturen.Queue.isEmpty">
+<area shape="rect" id="node1" title=" " alt="" coords="917,235,1216,276"/>
+<area shape="rect" id="node2" href="$class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_queue.html#a19a730a2088c6a7af671924bd2e51bbd" title=" " alt="" coords="547,5,845,47"/>
+<area shape="rect" id="node3" href="$class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_queue.html#a909d518a3303f5aab8311bb5fd9b4099" title=" " alt="" coords="547,71,845,112"/>
+<area shape="rect" id="node4" href="$class_k_a_g_o__framework_1_1control_1_1_database_controller.html#a18f37ce5910028481e644b3d136968f3" title=" " alt="" coords="582,136,810,177"/>
+<area shape="rect" id="node5" href="$class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1msaccess_1_1_database_connector.html#a2aa397da8a10ddf49dd62776ecf75145" title=" " alt="" coords="523,201,869,243"/>
+<area shape="rect" id="node6" href="$class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_database_connector.html#a69e0866457f55099bb3d1443aa9d9bd4" title=" " alt="" coords="535,267,857,308"/>
+<area shape="rect" id="node7" href="$class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1sqllite_1_1_database_connector.html#a3aa44cdfac8a1b0ee4d12377d6094900" title=" " alt="" coords="535,332,857,373"/>
+<area shape="rect" id="node8" href="$class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_queue.html#a696442ccf3c9d62a5abd79d59417cfff" title=" " alt="" coords="547,397,845,439"/>
+<area shape="rect" id="node9" href="$class_k_a_g_o__framework_1_1control_1_1_sound_controller.html#a3da98e22ee8a34778a5bdd6b18f1787f" title=" " alt="" coords="591,463,801,504"/>
+<area shape="rect" id="node10" href="$class_k_a_g_o__framework_1_1control_1_1_view_controller.html#a6de42249055d0bd2c541c52b161e593d" title=" " alt="" coords="265,429,467,471"/>
+<area shape="rect" id="node11" href="$class_k_a_g_o__framework_1_1control_1_1_view_controller.html#aba41a03cb6ea5949712ddef13219604a" title=" " alt="" coords="257,495,475,536"/>
+<area shape="rect" id="node12" href="$class_k_a_g_o__framework_1_1view_1_1_drawing_panel.html#a1e5c4a9156fea899108bbf9c1fb4d9e5" title=" " alt="" coords="5,495,209,536"/>
+</map>

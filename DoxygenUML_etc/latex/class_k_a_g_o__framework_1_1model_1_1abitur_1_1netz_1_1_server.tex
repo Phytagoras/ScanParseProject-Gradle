@@ -1,0 +1,128 @@
+\hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server}{}\doxysection{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Server Class Reference}
+\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server}\index{KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_a2e75cd7bfa36a0f9f909080aa1462db1}{Server}} (int p\+Port)
+\item 
+boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_a7ec3ee30aaa84c445c5de4c228726fe7}{is\+Open}} ()
+\item 
+boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_af12aa9d8a6525c167cd8e3f8d591d64c}{is\+Connected\+To}} (String p\+Client\+IP, int p\+Client\+Port)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_aa015c661c0312daba8ddffa9e52f8497}{send}} (String p\+Client\+IP, int p\+Client\+Port, String p\+Message)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_abcd6a54d395f1c3332b05826179f2a79}{send\+To\+All}} (String p\+Message)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_ad538be50a1034d7fe7d16a100d43b53f}{close\+Connection}} (String p\+Client\+IP, int p\+Client\+Port)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_aac679dae09aa79047bd772234a881da8}{close}} ()
+\item 
+abstract void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_a4bfa28896b1f8f85e5a54d2cd24f0cbc}{process\+New\+Connection}} (String p\+Client\+IP, int p\+Client\+Port)
+\item 
+abstract void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_ad0ca1439492a7928d503a3e2682079b2}{process\+Message}} (String p\+Client\+IP, int p\+Client\+Port, String p\+Message)
+\item 
+abstract void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_a63e70c867b30972149f49f6bbbbd292d}{process\+Closing\+Connection}} (String p\+Client\+IP, int p\+Client\+Port)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_a2e75cd7bfa36a0f9f909080aa1462db1}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_a2e75cd7bfa36a0f9f909080aa1462db1}} 
+\index{KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}!Server@{Server}}
+\index{Server@{Server}!KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}}
+\doxysubsubsection{\texorpdfstring{Server()}{Server()}}
+{\footnotesize\ttfamily K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Server.\+Server (\begin{DoxyParamCaption}\item[{int}]{p\+Port }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_aac679dae09aa79047bd772234a881da8}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_aac679dae09aa79047bd772234a881da8}} 
+\index{KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}!close@{close}}
+\index{close@{close}!KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Server.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_aac679dae09aa79047bd772234a881da8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_ad538be50a1034d7fe7d16a100d43b53f}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_ad538be50a1034d7fe7d16a100d43b53f}} 
+\index{KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}!closeConnection@{closeConnection}}
+\index{closeConnection@{closeConnection}!KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}}
+\doxysubsubsection{\texorpdfstring{closeConnection()}{closeConnection()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Server.\+close\+Connection (\begin{DoxyParamCaption}\item[{String}]{p\+Client\+IP,  }\item[{int}]{p\+Client\+Port }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_ad538be50a1034d7fe7d16a100d43b53f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_af12aa9d8a6525c167cd8e3f8d591d64c}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_af12aa9d8a6525c167cd8e3f8d591d64c}} 
+\index{KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}!isConnectedTo@{isConnectedTo}}
+\index{isConnectedTo@{isConnectedTo}!KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}}
+\doxysubsubsection{\texorpdfstring{isConnectedTo()}{isConnectedTo()}}
+{\footnotesize\ttfamily boolean K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Server.\+is\+Connected\+To (\begin{DoxyParamCaption}\item[{String}]{p\+Client\+IP,  }\item[{int}]{p\+Client\+Port }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_a7ec3ee30aaa84c445c5de4c228726fe7}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_a7ec3ee30aaa84c445c5de4c228726fe7}} 
+\index{KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}!isOpen@{isOpen}}
+\index{isOpen@{isOpen}!KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}}
+\doxysubsubsection{\texorpdfstring{isOpen()}{isOpen()}}
+{\footnotesize\ttfamily boolean K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Server.\+is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_a63e70c867b30972149f49f6bbbbd292d}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_a63e70c867b30972149f49f6bbbbd292d}} 
+\index{KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}!processClosingConnection@{processClosingConnection}}
+\index{processClosingConnection@{processClosingConnection}!KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}}
+\doxysubsubsection{\texorpdfstring{processClosingConnection()}{processClosingConnection()}}
+{\footnotesize\ttfamily abstract void K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Server.\+process\+Closing\+Connection (\begin{DoxyParamCaption}\item[{String}]{p\+Client\+IP,  }\item[{int}]{p\+Client\+Port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_a63e70c867b30972149f49f6bbbbd292d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_ad0ca1439492a7928d503a3e2682079b2}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_ad0ca1439492a7928d503a3e2682079b2}} 
+\index{KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}!processMessage@{processMessage}}
+\index{processMessage@{processMessage}!KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}}
+\doxysubsubsection{\texorpdfstring{processMessage()}{processMessage()}}
+{\footnotesize\ttfamily abstract void K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Server.\+process\+Message (\begin{DoxyParamCaption}\item[{String}]{p\+Client\+IP,  }\item[{int}]{p\+Client\+Port,  }\item[{String}]{p\+Message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_a4bfa28896b1f8f85e5a54d2cd24f0cbc}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_a4bfa28896b1f8f85e5a54d2cd24f0cbc}} 
+\index{KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}!processNewConnection@{processNewConnection}}
+\index{processNewConnection@{processNewConnection}!KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}}
+\doxysubsubsection{\texorpdfstring{processNewConnection()}{processNewConnection()}}
+{\footnotesize\ttfamily abstract void K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Server.\+process\+New\+Connection (\begin{DoxyParamCaption}\item[{String}]{p\+Client\+IP,  }\item[{int}]{p\+Client\+Port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_aa015c661c0312daba8ddffa9e52f8497}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_aa015c661c0312daba8ddffa9e52f8497}} 
+\index{KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}!send@{send}}
+\index{send@{send}!KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Server.\+send (\begin{DoxyParamCaption}\item[{String}]{p\+Client\+IP,  }\item[{int}]{p\+Client\+Port,  }\item[{String}]{p\+Message }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_abcd6a54d395f1c3332b05826179f2a79}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_abcd6a54d395f1c3332b05826179f2a79}} 
+\index{KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}!sendToAll@{sendToAll}}
+\index{sendToAll@{sendToAll}!KAGO\_framework.model.abitur.netz.Server@{KAGO\_framework.model.abitur.netz.Server}}
+\doxysubsubsection{\texorpdfstring{sendToAll()}{sendToAll()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Server.\+send\+To\+All (\begin{DoxyParamCaption}\item[{String}]{p\+Message }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server_abcd6a54d395f1c3332b05826179f2a79_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Eriks\+Bilderund\+Dateien/\+Git\+Hub/\+Git\+Hub/\+Scan\+Parse\+Project-\/\+Gradle/src/main/java/\+K\+A\+G\+O\+\_\+framework/model/abitur/netz/\mbox{\hyperlink{_server_8java}{Server.\+java}}\end{DoxyCompactItemize}

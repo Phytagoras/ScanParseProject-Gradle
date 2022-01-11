@@ -1,0 +1,71 @@
+\hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client}{}\doxysection{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Client Class Reference}
+\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client}\index{KAGO\_framework.model.abitur.netz.Client@{KAGO\_framework.model.abitur.netz.Client}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client_a9a3fa8090042d2c7fa6e4b9b5c9a4158}{Client}} (String p\+Server\+IP, int p\+Server\+Port)
+\item 
+boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client_accc5ba0585b537106741f5b362fa7257}{is\+Connected}} ()
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client_a34908840a5c212e48d5aa6d439a2df24}{send}} (String p\+Message)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client_a52d6febd89038246dfc3d11910a5906e}{close}} ()
+\item 
+abstract void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client_ad7e714e589411fab1aa0e05a50113a76}{process\+Message}} (String p\+Message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Materialien zu den zentralen N\+R\+W-\/\+Abiturpruefungen im Fach Informatik ab 2018 
+
+Klasse \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client}{Client}} 
+
+Objekte von Unterklassen der abstrakten Klasse \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client}{Client}} ermoeglichen Netzwerkverbindungen zu einem \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server}{Server}} mittels T\+C\+P/\+I\+P-\/\+Protokoll. Nach Verbindungsaufbau koennen Zeichenketten (Strings) zum \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_server}{Server}} gesendet und von diesem empfangen werden, wobei der Nachrichtenempfang nebenlaeufig geschieht. Zur Vereinfachung finden Nachrichtenversand und -\/empfang zeilenweise statt, d. h., beim Senden einer Zeichenkette wird ein Zeilentrenner ergaenzt und beim Empfang wird dieser entfernt. Jede empfangene Nachricht wird einer Ereignisbehandlungsmethode uebergeben, die in Unterklassen implementiert werden muss. Es findet nur eine rudimentaere Fehlerbehandlung statt, so dass z.\+B. Verbindungsabbrueche nicht zu einem Programmabbruch fuehren. Eine einmal unterbrochene oder getrennte Verbindung kann nicht reaktiviert werden. 
+
+\begin{DoxyAuthor}{Author}
+Qualitaets-\/ und Unterstuetzungs\+Agentur -\/ Landesinstitut fuer Schule 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+30.\+08.\+2016 
+\end{DoxyVersion}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client_a9a3fa8090042d2c7fa6e4b9b5c9a4158}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client_a9a3fa8090042d2c7fa6e4b9b5c9a4158}} 
+\index{KAGO\_framework.model.abitur.netz.Client@{KAGO\_framework.model.abitur.netz.Client}!Client@{Client}}
+\index{Client@{Client}!KAGO\_framework.model.abitur.netz.Client@{KAGO\_framework.model.abitur.netz.Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}}
+{\footnotesize\ttfamily K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Client.\+Client (\begin{DoxyParamCaption}\item[{String}]{p\+Server\+IP,  }\item[{int}]{p\+Server\+Port }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client_a52d6febd89038246dfc3d11910a5906e}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client_a52d6febd89038246dfc3d11910a5906e}} 
+\index{KAGO\_framework.model.abitur.netz.Client@{KAGO\_framework.model.abitur.netz.Client}!close@{close}}
+\index{close@{close}!KAGO\_framework.model.abitur.netz.Client@{KAGO\_framework.model.abitur.netz.Client}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Client.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client_accc5ba0585b537106741f5b362fa7257}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client_accc5ba0585b537106741f5b362fa7257}} 
+\index{KAGO\_framework.model.abitur.netz.Client@{KAGO\_framework.model.abitur.netz.Client}!isConnected@{isConnected}}
+\index{isConnected@{isConnected}!KAGO\_framework.model.abitur.netz.Client@{KAGO\_framework.model.abitur.netz.Client}}
+\doxysubsubsection{\texorpdfstring{isConnected()}{isConnected()}}
+{\footnotesize\ttfamily boolean K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Client.\+is\+Connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client_ad7e714e589411fab1aa0e05a50113a76}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client_ad7e714e589411fab1aa0e05a50113a76}} 
+\index{KAGO\_framework.model.abitur.netz.Client@{KAGO\_framework.model.abitur.netz.Client}!processMessage@{processMessage}}
+\index{processMessage@{processMessage}!KAGO\_framework.model.abitur.netz.Client@{KAGO\_framework.model.abitur.netz.Client}}
+\doxysubsubsection{\texorpdfstring{processMessage()}{processMessage()}}
+{\footnotesize\ttfamily abstract void K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Client.\+process\+Message (\begin{DoxyParamCaption}\item[{String}]{p\+Message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client_a34908840a5c212e48d5aa6d439a2df24}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1netz_1_1_client_a34908840a5c212e48d5aa6d439a2df24}} 
+\index{KAGO\_framework.model.abitur.netz.Client@{KAGO\_framework.model.abitur.netz.Client}!send@{send}}
+\index{send@{send}!KAGO\_framework.model.abitur.netz.Client@{KAGO\_framework.model.abitur.netz.Client}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+netz.\+Client.\+send (\begin{DoxyParamCaption}\item[{String}]{p\+Message }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Eriks\+Bilderund\+Dateien/\+Git\+Hub/\+Git\+Hub/\+Scan\+Parse\+Project-\/\+Gradle/src/main/java/\+K\+A\+G\+O\+\_\+framework/model/abitur/netz/\mbox{\hyperlink{_client_8java}{Client.\+java}}\end{DoxyCompactItemize}

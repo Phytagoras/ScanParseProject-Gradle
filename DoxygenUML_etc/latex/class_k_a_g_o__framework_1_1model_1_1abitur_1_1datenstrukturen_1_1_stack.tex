@@ -1,0 +1,112 @@
+\hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack}{}\doxysection{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Stack$<$ Content\+Type $>$ Class Template Reference}
+\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack}\index{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_ae66d594827f4fd65b397593a6d86064d}{Stack}} ()
+\item 
+boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_ac6f67f25e565f9a9534e0d34935ff238}{is\+Empty}} ()
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_a84fa0e5128ffc437a1489de1dbf8eba9}{push}} (Content\+Type p\+Content)
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_acf7cb56df6cb3efa6cf86d2fe98a5c20}{pop}} ()
+\item 
+Content\+Type \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_a4aaae8e8c9ee912be16f25a6557a7ed0}{top}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Materialien zu den zentralen N\+R\+W-\/\+Abiturpruefungen im Fach Informatik ab 2018 
+
+Generische Klasse Stack$<$\+Content\+Type$>$ 
+
+Objekte der generischen Klasse \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack}{Stack}} (Keller, Stapel) verwalten beliebige Objekte vom Typ Content\+Type nach dem Last-\/\+In-\/\+First-\/\+Out-\/\+Prinzip, d.\+h., das zuletzt abgelegte Objekt wird als erstes wieder entnommen. Alle Methoden haben eine konstante Laufzeit, unabhaengig von der Anzahl der verwalteten Objekte. 
+
+\begin{DoxyAuthor}{Author}
+Qualitaets-\/ und Unterstuetzungs\+Agentur -\/ Landesinstitut fuer Schule 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+Generisch\+\_\+02 2014-\/02-\/21 
+\end{DoxyVersion}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_ae66d594827f4fd65b397593a6d86064d}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_ae66d594827f4fd65b397593a6d86064d}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$}!Stack@{Stack}}
+\index{Stack@{Stack}!KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{Stack()}{Stack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Stack}}$<$ Content\+Type $>$.\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack}{Stack}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Ein leerer Stapel wird erzeugt. Objekte, die in diesem Stapel verwaltet werden, muessen vom Typ Content\+Type sein. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_ac6f67f25e565f9a9534e0d34935ff238}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_ac6f67f25e565f9a9534e0d34935ff238}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Stack}}$<$ Content\+Type $>$.is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Die Anfrage liefert den Wert true, wenn der Stapel keine Objekte enthaelt, sonst liefert sie den Wert false.
+
+\begin{DoxyReturn}{Returns}
+true, falls der Stapel leer ist, sonst false 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_ac6f67f25e565f9a9534e0d34935ff238_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_acf7cb56df6cb3efa6cf86d2fe98a5c20}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_acf7cb56df6cb3efa6cf86d2fe98a5c20}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$}!pop@{pop}}
+\index{pop@{pop}!KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Stack}}$<$ Content\+Type $>$.pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Das zuletzt eingefuegte Objekt wird von dem Stapel entfernt. Falls der Stapel leer ist, bleibt er unveraendert. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_acf7cb56df6cb3efa6cf86d2fe98a5c20_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_a84fa0e5128ffc437a1489de1dbf8eba9}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_a84fa0e5128ffc437a1489de1dbf8eba9}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$}!push@{push}}
+\index{push@{push}!KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Stack}}$<$ Content\+Type $>$.push (\begin{DoxyParamCaption}\item[{Content\+Type}]{p\+Content }\end{DoxyParamCaption})}
+
+Das Objekt p\+Content\+Type wird oben auf den Stapel gelegt. Falls p\+Content\+Type gleich null ist, bleibt der Stapel unveraendert.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Content} & das einzufuegende Objekt vom Typ Content\+Type \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_a4aaae8e8c9ee912be16f25a6557a7ed0}\label{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_a4aaae8e8c9ee912be16f25a6557a7ed0}} 
+\index{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$}!top@{top}}
+\index{top@{top}!KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$@{KAGO\_framework.model.abitur.datenstrukturen.Stack$<$ ContentType $>$}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily Content\+Type \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack}{K\+A\+G\+O\+\_\+framework.\+model.\+abitur.\+datenstrukturen.\+Stack}}$<$ Content\+Type $>$.top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Die Anfrage liefert das oberste Stapelobjekt. Der Stapel bleibt unveraendert. Falls der Stapel leer ist, wird null zurueckgegeben.
+
+\begin{DoxyReturn}{Returns}
+das oberste Stackelement vom Typ Content\+Type oder null, falls der \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack}{Stack}} leer ist 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenstrukturen_1_1_stack_a4aaae8e8c9ee912be16f25a6557a7ed0_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Eriks\+Bilderund\+Dateien/\+Git\+Hub/\+Git\+Hub/\+Scan\+Parse\+Project-\/\+Gradle/src/main/java/\+K\+A\+G\+O\+\_\+framework/model/abitur/datenstrukturen/\mbox{\hyperlink{_stack_8java}{Stack.\+java}}\end{DoxyCompactItemize}

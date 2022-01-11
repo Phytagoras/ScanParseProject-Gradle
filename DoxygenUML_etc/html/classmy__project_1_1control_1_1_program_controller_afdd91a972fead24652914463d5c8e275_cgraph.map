@@ -1,0 +1,6 @@
+<map id="my_project.control.ProgramController.startProgram" name="my_project.control.ProgramController.startProgram">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,188,112"/>
+<area shape="rect" id="node2" href="$class_k_a_g_o__framework_1_1control_1_1_view_controller.html#a43aead8101d34c1691f6e7a08ac0ec27" title=" " alt="" coords="241,5,442,47"/>
+<area shape="rect" id="node3" href="$class_k_a_g_o__framework_1_1control_1_1_view_controller.html#ac27336de2e7cd23b10ee1e4ab7d4b6c3" title=" " alt="" coords="241,71,442,112"/>
+<area shape="rect" id="node4" href="$class_k_a_g_o__framework_1_1control_1_1_sound_controller.html#ad007ca574ee1eec52971dbb858249ed7" title=" " alt="" coords="236,136,447,177"/>
+</map>

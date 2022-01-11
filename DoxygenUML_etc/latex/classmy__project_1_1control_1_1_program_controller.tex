@@ -1,0 +1,198 @@
+\hypertarget{classmy__project_1_1control_1_1_program_controller}{}\doxysection{my\+\_\+project.\+control.\+Program\+Controller Class Reference}
+\label{classmy__project_1_1control_1_1_program_controller}\index{my\_project.control.ProgramController@{my\_project.control.ProgramController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmy__project_1_1control_1_1_program_controller_a468c64ca353ce6cfadd9d073c6110432}{Program\+Controller}} (\mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_view_controller}{View\+Controller}} view\+Controller)
+\item 
+void \mbox{\hyperlink{classmy__project_1_1control_1_1_program_controller_afdd91a972fead24652914463d5c8e275}{start\+Program}} ()
+\item 
+boolean \mbox{\hyperlink{classmy__project_1_1control_1_1_program_controller_abf32d023dfbf3352155c39a8678f3422}{parse\+String}} (String input, int parser\+Index)
+\item 
+boolean \mbox{\hyperlink{classmy__project_1_1control_1_1_program_controller_ab90be7745a47288da60ba85416211a34}{scan\+String}} (String input, int parser\+Index)
+\item 
+void \mbox{\hyperlink{classmy__project_1_1control_1_1_program_controller_a401a56e0a9e9a37c140e4e7933f86d6a}{update\+Program}} (double dt)
+\item 
+void \mbox{\hyperlink{classmy__project_1_1control_1_1_program_controller_a0ede31578235648da04aa117af32bfdd}{mouse\+Clicked}} (Mouse\+Event e)
+\item 
+void \mbox{\hyperlink{classmy__project_1_1control_1_1_program_controller_a4d7407d68f8508d79a326c3a80511415}{play\+Yes}} ()
+\item 
+void \mbox{\hyperlink{classmy__project_1_1control_1_1_program_controller_aff693499cc94808afd407b34a3155c70}{play\+No}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ein Objekt der Klasse \mbox{\hyperlink{classmy__project_1_1control_1_1_program_controller}{Program\+Controller}} dient dazu das Programm zu steuern. Die update\+Program -\/ Methode wird mit jeder Frame im laufenden Programm aufgerufen. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmy__project_1_1control_1_1_program_controller_a468c64ca353ce6cfadd9d073c6110432}\label{classmy__project_1_1control_1_1_program_controller_a468c64ca353ce6cfadd9d073c6110432}} 
+\index{my\_project.control.ProgramController@{my\_project.control.ProgramController}!ProgramController@{ProgramController}}
+\index{ProgramController@{ProgramController}!my\_project.control.ProgramController@{my\_project.control.ProgramController}}
+\doxysubsubsection{\texorpdfstring{ProgramController()}{ProgramController()}}
+{\footnotesize\ttfamily my\+\_\+project.\+control.\+Program\+Controller.\+Program\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_view_controller}{View\+Controller}}}]{view\+Controller }\end{DoxyParamCaption})}
+
+Konstruktor Dieser legt das Objekt der Klasse \mbox{\hyperlink{classmy__project_1_1control_1_1_program_controller}{Program\+Controller}} an, das den Programmfluss steuert. Damit der \mbox{\hyperlink{classmy__project_1_1control_1_1_program_controller}{Program\+Controller}} auf das Fenster zugreifen kann, benötigt er eine Referenz auf das Objekt der Klasse view\+Controller. Diese wird als Parameter übergeben. 
+\begin{DoxyParams}{Parameters}
+{\em view\+Controller} & das view\+Controller-\/\+Objekt des Programms \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmy__project_1_1control_1_1_program_controller_a0ede31578235648da04aa117af32bfdd}\label{classmy__project_1_1control_1_1_program_controller_a0ede31578235648da04aa117af32bfdd}} 
+\index{my\_project.control.ProgramController@{my\_project.control.ProgramController}!mouseClicked@{mouseClicked}}
+\index{mouseClicked@{mouseClicked}!my\_project.control.ProgramController@{my\_project.control.ProgramController}}
+\doxysubsubsection{\texorpdfstring{mouseClicked()}{mouseClicked()}}
+{\footnotesize\ttfamily void my\+\_\+project.\+control.\+Program\+Controller.\+mouse\+Clicked (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+Verarbeitet einen Mausklick. 
+\begin{DoxyParams}{Parameters}
+{\em e} & das Objekt enthält alle Informationen zum Klick \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmy__project_1_1control_1_1_program_controller_abf32d023dfbf3352155c39a8678f3422}\label{classmy__project_1_1control_1_1_program_controller_abf32d023dfbf3352155c39a8678f3422}} 
+\index{my\_project.control.ProgramController@{my\_project.control.ProgramController}!parseString@{parseString}}
+\index{parseString@{parseString}!my\_project.control.ProgramController@{my\_project.control.ProgramController}}
+\doxysubsubsection{\texorpdfstring{parseString()}{parseString()}}
+{\footnotesize\ttfamily boolean my\+\_\+project.\+control.\+Program\+Controller.\+parse\+String (\begin{DoxyParamCaption}\item[{String}]{input,  }\item[{int}]{parser\+Index }\end{DoxyParamCaption})}
+
+Diese Methode parst den übergebenen String mit einem Parser einer Sprache. 
+\begin{DoxyParams}{Parameters}
+{\em input} & der zu parsende String \\
+\hline
+{\em parser\+Index} & der Index des zu verwendenden Parsers (0 = Knebiparser, Rest ist frei) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, fallse der String ein Wort der Sprache des Parsers ist. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmy__project_1_1control_1_1_program_controller_abf32d023dfbf3352155c39a8678f3422_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmy__project_1_1control_1_1_program_controller_abf32d023dfbf3352155c39a8678f3422_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmy__project_1_1control_1_1_program_controller_aff693499cc94808afd407b34a3155c70}\label{classmy__project_1_1control_1_1_program_controller_aff693499cc94808afd407b34a3155c70}} 
+\index{my\_project.control.ProgramController@{my\_project.control.ProgramController}!playNo@{playNo}}
+\index{playNo@{playNo}!my\_project.control.ProgramController@{my\_project.control.ProgramController}}
+\doxysubsubsection{\texorpdfstring{playNo()}{playNo()}}
+{\footnotesize\ttfamily void my\+\_\+project.\+control.\+Program\+Controller.\+play\+No (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmy__project_1_1control_1_1_program_controller_aff693499cc94808afd407b34a3155c70_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmy__project_1_1control_1_1_program_controller_aff693499cc94808afd407b34a3155c70_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmy__project_1_1control_1_1_program_controller_a4d7407d68f8508d79a326c3a80511415}\label{classmy__project_1_1control_1_1_program_controller_a4d7407d68f8508d79a326c3a80511415}} 
+\index{my\_project.control.ProgramController@{my\_project.control.ProgramController}!playYes@{playYes}}
+\index{playYes@{playYes}!my\_project.control.ProgramController@{my\_project.control.ProgramController}}
+\doxysubsubsection{\texorpdfstring{playYes()}{playYes()}}
+{\footnotesize\ttfamily void my\+\_\+project.\+control.\+Program\+Controller.\+play\+Yes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmy__project_1_1control_1_1_program_controller_a4d7407d68f8508d79a326c3a80511415_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmy__project_1_1control_1_1_program_controller_a4d7407d68f8508d79a326c3a80511415_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmy__project_1_1control_1_1_program_controller_ab90be7745a47288da60ba85416211a34}\label{classmy__project_1_1control_1_1_program_controller_ab90be7745a47288da60ba85416211a34}} 
+\index{my\_project.control.ProgramController@{my\_project.control.ProgramController}!scanString@{scanString}}
+\index{scanString@{scanString}!my\_project.control.ProgramController@{my\_project.control.ProgramController}}
+\doxysubsubsection{\texorpdfstring{scanString()}{scanString()}}
+{\footnotesize\ttfamily boolean my\+\_\+project.\+control.\+Program\+Controller.\+scan\+String (\begin{DoxyParamCaption}\item[{String}]{input,  }\item[{int}]{parser\+Index }\end{DoxyParamCaption})}
+
+Der übergebene String wird gescannt. 
+\begin{DoxyParams}{Parameters}
+{\em input} & der zu scannende String \\
+\hline
+{\em parser\+Index} & der zu verwendende Scanner (ist dem Parser zugeordnet, daher Parserindex) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, falls der Scan erfolgreich war, andernfalls false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmy__project_1_1control_1_1_program_controller_ab90be7745a47288da60ba85416211a34_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmy__project_1_1control_1_1_program_controller_ab90be7745a47288da60ba85416211a34_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmy__project_1_1control_1_1_program_controller_afdd91a972fead24652914463d5c8e275}\label{classmy__project_1_1control_1_1_program_controller_afdd91a972fead24652914463d5c8e275}} 
+\index{my\_project.control.ProgramController@{my\_project.control.ProgramController}!startProgram@{startProgram}}
+\index{startProgram@{startProgram}!my\_project.control.ProgramController@{my\_project.control.ProgramController}}
+\doxysubsubsection{\texorpdfstring{startProgram()}{startProgram()}}
+{\footnotesize\ttfamily void my\+\_\+project.\+control.\+Program\+Controller.\+start\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Diese Methode wird genau ein mal nach Programmstart aufgerufen. Achtung\+: funktioniert nicht im Szenario-\/\+Modus Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmy__project_1_1control_1_1_program_controller_afdd91a972fead24652914463d5c8e275_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmy__project_1_1control_1_1_program_controller_a401a56e0a9e9a37c140e4e7933f86d6a}\label{classmy__project_1_1control_1_1_program_controller_a401a56e0a9e9a37c140e4e7933f86d6a}} 
+\index{my\_project.control.ProgramController@{my\_project.control.ProgramController}!updateProgram@{updateProgram}}
+\index{updateProgram@{updateProgram}!my\_project.control.ProgramController@{my\_project.control.ProgramController}}
+\doxysubsubsection{\texorpdfstring{updateProgram()}{updateProgram()}}
+{\footnotesize\ttfamily void my\+\_\+project.\+control.\+Program\+Controller.\+update\+Program (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})}
+
+Sorgt dafür, dass zunächst gewartet wird, damit der Sound\+Controller die Initialisierung abschließen kann. Die Wartezeit ist fest und damit nicht ganz sauber implementiert, aber dafür funktioniert das Programm auch bei falscher Java-\/\+Version 
+\begin{DoxyParams}{Parameters}
+{\em dt} & Zeit seit letzter Frame \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmy__project_1_1control_1_1_program_controller_a401a56e0a9e9a37c140e4e7933f86d6a_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Eriks\+Bilderund\+Dateien/\+Git\+Hub/\+Git\+Hub/\+Scan\+Parse\+Project-\/\+Gradle/src/main/java/my\+\_\+project/control/\mbox{\hyperlink{_program_controller_8java}{Program\+Controller.\+java}}\end{DoxyCompactItemize}

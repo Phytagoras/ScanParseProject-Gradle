@@ -1,0 +1,75 @@
+\hypertarget{interface_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_handler}{}\doxysection{K\+A\+G\+O\+\_\+framework.\+view.\+simple\+\_\+gui.\+Button\+Handler Interface Reference}
+\label{interface_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_handler}\index{KAGO\_framework.view.simple\_gui.ButtonHandler@{KAGO\_framework.view.simple\_gui.ButtonHandler}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_handler_aa3e2a66fbaa2a504f2f168d1fa2f7fd3}{process\+Button\+Click}} (int code)
+\item 
+int \mbox{\hyperlink{interface_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_handler_a49b10a77b5e30d140b2d67cf78d00de5}{get\+Scene\+Index}} ()
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_view_controller}{View\+Controller}} \mbox{\hyperlink{interface_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_handler_a92608dfba03837e6a444f86dbbb08698}{get\+View\+Controller}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface für Objekte, die Buttons erzeugen wollen Stellt sich, dass der \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button}{Button}} alle nötigen Infos erhält 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_handler_a49b10a77b5e30d140b2d67cf78d00de5}\label{interface_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_handler_a49b10a77b5e30d140b2d67cf78d00de5}} 
+\index{KAGO\_framework.view.simple\_gui.ButtonHandler@{KAGO\_framework.view.simple\_gui.ButtonHandler}!getSceneIndex@{getSceneIndex}}
+\index{getSceneIndex@{getSceneIndex}!KAGO\_framework.view.simple\_gui.ButtonHandler@{KAGO\_framework.view.simple\_gui.ButtonHandler}}
+\doxysubsubsection{\texorpdfstring{getSceneIndex()}{getSceneIndex()}}
+{\footnotesize\ttfamily int K\+A\+G\+O\+\_\+framework.\+view.\+simple\+\_\+gui.\+Button\+Handler.\+get\+Scene\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Liefert den Index der Szene für die Buttons des Buttonhandlers zurück \begin{DoxyReturn}{Returns}
+Muss den Index der Szene zurückliefert, in der die Buttons benutzt werden sollen 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_handler_a49b10a77b5e30d140b2d67cf78d00de5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interface_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_handler_a92608dfba03837e6a444f86dbbb08698}\label{interface_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_handler_a92608dfba03837e6a444f86dbbb08698}} 
+\index{KAGO\_framework.view.simple\_gui.ButtonHandler@{KAGO\_framework.view.simple\_gui.ButtonHandler}!getViewController@{getViewController}}
+\index{getViewController@{getViewController}!KAGO\_framework.view.simple\_gui.ButtonHandler@{KAGO\_framework.view.simple\_gui.ButtonHandler}}
+\doxysubsubsection{\texorpdfstring{getViewController()}{getViewController()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_view_controller}{View\+Controller}} K\+A\+G\+O\+\_\+framework.\+view.\+simple\+\_\+gui.\+Button\+Handler.\+get\+View\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stellt den Buttons den View\+Controller zur Verfügung \begin{DoxyReturn}{Returns}
+der View\+Controller des Frameworks 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_handler_a92608dfba03837e6a444f86dbbb08698_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interface_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_handler_aa3e2a66fbaa2a504f2f168d1fa2f7fd3}\label{interface_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_handler_aa3e2a66fbaa2a504f2f168d1fa2f7fd3}} 
+\index{KAGO\_framework.view.simple\_gui.ButtonHandler@{KAGO\_framework.view.simple\_gui.ButtonHandler}!processButtonClick@{processButtonClick}}
+\index{processButtonClick@{processButtonClick}!KAGO\_framework.view.simple\_gui.ButtonHandler@{KAGO\_framework.view.simple\_gui.ButtonHandler}}
+\doxysubsubsection{\texorpdfstring{processButtonClick()}{processButtonClick()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+view.\+simple\+\_\+gui.\+Button\+Handler.\+process\+Button\+Click (\begin{DoxyParamCaption}\item[{int}]{code }\end{DoxyParamCaption})}
+
+Wird vom \mbox{\hyperlink{class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button}{Button}} aufgerufen, wenn er angeklickt wird 
+\begin{DoxyParams}{Parameters}
+{\em code} & der Aktionscode, spezifiziert durch den \mbox{\hyperlink{interface_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_handler}{Button\+Handler}} \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button_handler_aa3e2a66fbaa2a504f2f168d1fa2f7fd3_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Eriks\+Bilderund\+Dateien/\+Git\+Hub/\+Git\+Hub/\+Scan\+Parse\+Project-\/\+Gradle/src/main/java/\+K\+A\+G\+O\+\_\+framework/view/simple\+\_\+gui/\mbox{\hyperlink{_button_handler_8java}{Button\+Handler.\+java}}\end{DoxyCompactItemize}

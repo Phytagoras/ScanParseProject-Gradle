@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$interface_k_a_g_o__framework_1_1control_1_1_drawable.html" title=" " alt="" coords="5,137,232,163"/>
+<area shape="rect" id="node2" href="$class_k_a_g_o__framework_1_1model_1_1_graphical_object.html" title=" " alt="" coords="288,129,512,171"/>
+<area shape="rect" id="node3" href="$class_k_a_g_o__framework_1_1model_1_1_interactive_graphical_object.html" title=" " alt="" coords="568,64,795,105"/>
+<area shape="rect" id="node5" href="$class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_g_i_f_painter.html" title=" " alt="" coords="583,195,779,236"/>
+<area shape="rect" id="node6" href="$class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_label.html" title=" " alt="" coords="583,129,779,171"/>
+<area shape="rect" id="node4" href="$class_k_a_g_o__framework_1_1view_1_1_program_view.html" title=" " alt="" coords="843,71,1077,98"/>
+<area shape="rect" id="node7" href="$class_k_a_g_o__framework_1_1view_1_1simple__gui_1_1_button.html" title=" " alt="" coords="862,5,1058,47"/>
+<area shape="rect" id="node8" href="$interface_k_a_g_o__framework_1_1control_1_1_interactable.html" title=" " alt="" coords="280,42,520,69"/>
+</map>

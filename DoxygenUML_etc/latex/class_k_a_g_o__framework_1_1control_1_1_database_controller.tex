@@ -1,0 +1,142 @@
+\hypertarget{class_k_a_g_o__framework_1_1control_1_1_database_controller}{}\doxysection{K\+A\+G\+O\+\_\+framework.\+control.\+Database\+Controller Class Reference}
+\label{class_k_a_g_o__framework_1_1control_1_1_database_controller}\index{KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_database_controller_a8a7eda087b3c32e3c731250742e98e38}{Database\+Controller}} (String server\+IP, String port, String database, String user, String password)
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_database_controller_a345dce02323800efc8a4ac91b5221447}{Database\+Controller}} ()
+\item 
+boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_database_controller_a337ac289bb3a60235062e7d4969e76b4}{connect}} ()
+\item 
+boolean \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_database_controller_a6ff965c80bc2448da5eddb56e259b322}{is\+Connected}} ()
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_database_controller_ada7112d2fabbad80771447ebd9e5bb0b}{disconnect}} ()
+\item 
+void \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_database_controller_a18f37ce5910028481e644b3d136968f3}{execute\+Statement}} (String p\+S\+Q\+L\+Statement)
+\item 
+\mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_query_result}{Query\+Result}} \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_database_controller_ac4db2843f079f5267d1f738c2259cc2c}{get\+Current\+Query\+Result}} ()
+\item 
+String \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_database_controller_a448b2cb78bde1c43963beb358da9503d}{get\+Error\+Message}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Connection \mbox{\hyperlink{class_k_a_g_o__framework_1_1control_1_1_database_controller_a51f00b562a13b99b839a67d5885bbffd}{connection}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Der Database-\/\+Controller dient zur Herstellung einer Verbindung mit einem S\+Q\+L-\/\+D\+B\+MS und kann S\+Q\+L-\/\+Anfragen bzw. Befehle schicken. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_database_controller_a8a7eda087b3c32e3c731250742e98e38}\label{class_k_a_g_o__framework_1_1control_1_1_database_controller_a8a7eda087b3c32e3c731250742e98e38}} 
+\index{KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}!DatabaseController@{DatabaseController}}
+\index{DatabaseController@{DatabaseController}!KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}}
+\doxysubsubsection{\texorpdfstring{DatabaseController()}{DatabaseController()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily K\+A\+G\+O\+\_\+framework.\+control.\+Database\+Controller.\+Database\+Controller (\begin{DoxyParamCaption}\item[{String}]{server\+IP,  }\item[{String}]{port,  }\item[{String}]{database,  }\item[{String}]{user,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+Erzeugt ein Database-\/\+Controller-\/\+Objekt und richtet es für die Verbindung mit einer beliebigen S\+Q\+L-\/\+Datenbank ein. 
+\begin{DoxyParams}{Parameters}
+{\em server\+IP} & die IP des S\+Q\+L-\/\+Servers \\
+\hline
+{\em port} & der gewünschte Port (Standard für S\+QL ist 1433 \\
+\hline
+{\em database} & der Name der Datenbank \\
+\hline
+{\em user} & der Nutzername \\
+\hline
+{\em password} & das Passwort für den genannten Nutzer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_database_controller_a345dce02323800efc8a4ac91b5221447}\label{class_k_a_g_o__framework_1_1control_1_1_database_controller_a345dce02323800efc8a4ac91b5221447}} 
+\index{KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}!DatabaseController@{DatabaseController}}
+\index{DatabaseController@{DatabaseController}!KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}}
+\doxysubsubsection{\texorpdfstring{DatabaseController()}{DatabaseController()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily K\+A\+G\+O\+\_\+framework.\+control.\+Database\+Controller.\+Database\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Erzeugt ein Database-\/\+Controller-\/\+Objekt und richtet es für die Verbindung zur Standard-\/\+Datenbank für den Informatik-\/\+Unterricht ein.
+
+Ein manueller Zugriff auf die Datenbank, zum Beispiel für Wartungsarbeiten ist möglich via\+: \href{https://webhosting24.1blu.de/1blu-dbManager/}{\texttt{ https\+://webhosting24.\+1blu.\+de/1blu-\/db\+Manager/}} und Nutzung von unten angegebenem Nutzer / Passwort 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_database_controller_a337ac289bb3a60235062e7d4969e76b4}\label{class_k_a_g_o__framework_1_1control_1_1_database_controller_a337ac289bb3a60235062e7d4969e76b4}} 
+\index{KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}!connect@{connect}}
+\index{connect@{connect}!KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily boolean K\+A\+G\+O\+\_\+framework.\+control.\+Database\+Controller.\+connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Verbindet den Server zu der bei der Initialisierung angegebenen Datenbank. Baut eine bestehende Verbindung N\+I\+C\+HT neu auf solange sie gültig ist. \begin{DoxyReturn}{Returns}
+gibt true zurück, falls die Verbindung erfolgreich war. Andernfalls false. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1control_1_1_database_controller_a337ac289bb3a60235062e7d4969e76b4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_database_controller_ada7112d2fabbad80771447ebd9e5bb0b}\label{class_k_a_g_o__framework_1_1control_1_1_database_controller_ada7112d2fabbad80771447ebd9e5bb0b}} 
+\index{KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+control.\+Database\+Controller.\+disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Trennt die aktuelle Datenbankverbindung ohne Rücksicht auf eventuell laufende Kommunikationsprozesse. \mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_database_controller_a18f37ce5910028481e644b3d136968f3}\label{class_k_a_g_o__framework_1_1control_1_1_database_controller_a18f37ce5910028481e644b3d136968f3}} 
+\index{KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}!executeStatement@{executeStatement}}
+\index{executeStatement@{executeStatement}!KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}}
+\doxysubsubsection{\texorpdfstring{executeStatement()}{executeStatement()}}
+{\footnotesize\ttfamily void K\+A\+G\+O\+\_\+framework.\+control.\+Database\+Controller.\+execute\+Statement (\begin{DoxyParamCaption}\item[{String}]{p\+S\+Q\+L\+Statement }\end{DoxyParamCaption})}
+
+Der Auftrag schickt den im Parameter p\+S\+Q\+L\+Statement enthaltenen S\+Q\+L-\/\+Befehl an die Datenbank ab. Handelt es sich bei p\+S\+Q\+L\+Statement um einen S\+Q\+L-\/\+Befehl, der eine Ergebnismenge liefert, so kann dieses Ergebnis anschließend mit der Methode get\+Current\+Query\+Result abgerufen werden. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1control_1_1_database_controller_a18f37ce5910028481e644b3d136968f3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_database_controller_ac4db2843f079f5267d1f738c2259cc2c}\label{class_k_a_g_o__framework_1_1control_1_1_database_controller_ac4db2843f079f5267d1f738c2259cc2c}} 
+\index{KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}!getCurrentQueryResult@{getCurrentQueryResult}}
+\index{getCurrentQueryResult@{getCurrentQueryResult}!KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}}
+\doxysubsubsection{\texorpdfstring{getCurrentQueryResult()}{getCurrentQueryResult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_a_g_o__framework_1_1model_1_1abitur_1_1datenbanken_1_1mysql_1_1_query_result}{Query\+Result}} K\+A\+G\+O\+\_\+framework.\+control.\+Database\+Controller.\+get\+Current\+Query\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Die Anfrage liefert das Ergebnis des letzten mit der Methode execute\+Statement an die Datenbank geschickten S\+Q\+L-\/\+Befehls als Ob-\/jekt vom Typ Query\+Result zurueck. Wurde bisher kein S\+Q\+L-\/\+Befehl abgeschickt oder ergab der letzte Aufruf von execute\+Statement keine Ergebnismenge (z.\+B. bei einem I\+N\+S\+E\+R\+T-\/\+Befehl oder einem Syntaxfehler), so wird null geliefert. \mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_database_controller_a448b2cb78bde1c43963beb358da9503d}\label{class_k_a_g_o__framework_1_1control_1_1_database_controller_a448b2cb78bde1c43963beb358da9503d}} 
+\index{KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}!getErrorMessage@{getErrorMessage}}
+\index{getErrorMessage@{getErrorMessage}!KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}}
+\doxysubsubsection{\texorpdfstring{getErrorMessage()}{getErrorMessage()}}
+{\footnotesize\ttfamily String K\+A\+G\+O\+\_\+framework.\+control.\+Database\+Controller.\+get\+Error\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Die Anfrage liefert null oder eine Fehlermeldung, die sich jeweils auf die letzte zuvor ausgefuehrte Datenbankoperation bezieht. \mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_database_controller_a6ff965c80bc2448da5eddb56e259b322}\label{class_k_a_g_o__framework_1_1control_1_1_database_controller_a6ff965c80bc2448da5eddb56e259b322}} 
+\index{KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}!isConnected@{isConnected}}
+\index{isConnected@{isConnected}!KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}}
+\doxysubsubsection{\texorpdfstring{isConnected()}{isConnected()}}
+{\footnotesize\ttfamily boolean K\+A\+G\+O\+\_\+framework.\+control.\+Database\+Controller.\+is\+Connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prüft, ob eine valide Verbindung zur Datenbank besteht \begin{DoxyReturn}{Returns}
+true, falls die Verbindung besteht, andernfalls false. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_a_g_o__framework_1_1control_1_1_database_controller_a6ff965c80bc2448da5eddb56e259b322_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_k_a_g_o__framework_1_1control_1_1_database_controller_a51f00b562a13b99b839a67d5885bbffd}\label{class_k_a_g_o__framework_1_1control_1_1_database_controller_a51f00b562a13b99b839a67d5885bbffd}} 
+\index{KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}!connection@{connection}}
+\index{connection@{connection}!KAGO\_framework.control.DatabaseController@{KAGO\_framework.control.DatabaseController}}
+\doxysubsubsection{\texorpdfstring{connection}{connection}}
+{\footnotesize\ttfamily Connection K\+A\+G\+O\+\_\+framework.\+control.\+Database\+Controller.\+connection\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Eriks\+Bilderund\+Dateien/\+Git\+Hub/\+Git\+Hub/\+Scan\+Parse\+Project-\/\+Gradle/src/main/java/\+K\+A\+G\+O\+\_\+framework/control/\mbox{\hyperlink{_database_controller_8java}{Database\+Controller.\+java}}\end{DoxyCompactItemize}

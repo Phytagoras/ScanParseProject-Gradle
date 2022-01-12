@@ -70,7 +70,7 @@ public class BungalowKontextfreiParser implements Parser {
             scanner.nextToken();
         }
         else return false;
-        if (checkA());
+        if (checkB());
         else return false;
         if (scanner.getType().equals("WAND") || scanner.getType().equals("WANDMITFENSTER")) scanner.nextToken();
         else return false;

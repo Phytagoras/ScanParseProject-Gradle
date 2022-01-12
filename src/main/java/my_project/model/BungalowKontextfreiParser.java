@@ -43,10 +43,13 @@ public class BungalowKontextfreiParser implements Parser {
     private boolean checkS() {
         if (scanner.getType().equals("AUSSENWAND")) scanner.nextToken();
         else return false;
-        if (checkA());
+
+        if (checkA()) ;
         else return false;
+
         if (scanner.getType().equals("AUSSENWAND")) scanner.nextToken();
         else return false;
+
         return true;
     }
 
@@ -54,26 +57,31 @@ public class BungalowKontextfreiParser implements Parser {
 
         if (scanner.getType().equals("WAND") || scanner.getType().equals("WANDMITFENSTER")) scanner.nextToken();
         else return false;
-        if (checkB());
+
+        if (checkB()) ;
         else return false;
+
         if (scanner.getType().equals("WAND") || scanner.getType().equals("WANDMITFENSTER")) scanner.nextToken();
         else return false;
+
         return true;
     }
 
     private boolean checkB() {
-        if (scanner.getType().equals("WAND") || scanner.getType().equals("WANDMITFENSTER")||scanner.getType().equals("TUER")){
-            if (scanner.getType().equals("TUER")){
+        if (scanner.getType().equals("WAND") || scanner.getType().equals("WANDMITFENSTER") || scanner.getType().equals("TUER")) {
+            if (scanner.getType().equals("TUER")) {
                 scanner.nextToken();
                 return true;
             }
             scanner.nextToken();
-        }
+        } else return false;
+
+        if (checkB()) ;
         else return false;
-        if (checkB());
-        else return false;
+
         if (scanner.getType().equals("WAND") || scanner.getType().equals("WANDMITFENSTER")) scanner.nextToken();
         else return false;
+
         return true;
     }
 
